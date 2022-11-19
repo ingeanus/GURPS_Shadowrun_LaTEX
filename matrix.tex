@@ -1,0 +1,444 @@
+\section{Matrix}
+
+\begin{multicols*}{3}
+	
+	\subsection{Books}
+	
+	The Matrix rules make use of GURPS Pyramid \#3/21 Cyberpunk article Console Cowboys and Cyberspace. It is a selection of rules for running a semi-complex minigame of hacking, which serves purpose for the Matrix well.
+	
+	Cyberpunk works through three parts: it creates an additional hardware modifier for computers to create cyberdecks, it creates rules for interface modes while hacking, and most importantly it creates a large swath of programs that are used to accomplish specific tasks in cyberspace.
+	
+	Cyberpunk also has a ruleset for determining opposition using the GURPS Action BAD system. However, these rules systematically misrepresent Shadowrun's security design philosophy, in that when facing powerful organizations, you will more often be facing many layers of weak opponents and security, and when facing a less-powerful individual, you will often face one strong opponent. BAD simply assigns a difficulty based on how powerful the entire opponent is, which tends to overvalue organizations and undervalue individual deckers. As such, it is not used for the setting.
+	
+	Another useful book is GURPS High Tech - Electricity and Electronics. It provides in depth explanations for many hardware and software related topics. Notably, we will be making use of the Dedicated modifier, which prevents programs from being changed, but applies x0.5¥ and x0.2lbs. 
+	
+	\subsection{Shadowrun Specifics}
+	
+	Shadowrun has a small selection of decking tools or systems that are unrepresented in Cyberpunk:
+	
+	\subsubsection{Cold \& Hot Sim}
+	
+	When entering into VR, any character with 1 or more points in Computer Hacking (or at the GMs discretion) can disable their Sim-filter Module, turning on Hot-Sim. 
+	
+	Hot-Sim adds +2 to all Computer Hacking, Computer Operation, Computer Programming, or Expert (Computer Security) rolls to use Cyberpunk's programs, however it provides a -2 to resistance rolls against the Damage program or any other effect that the Sim-Filter Module is usually protecting against (Such as traumatic Simsense recordings).
+	
+	\subsubsection{Link-Lock Program}
+	
+	\paragraph{Link-Lock Program (Continuous)}
+	
+	\textit{\textcolor{NavyBlue}{\\Default : Computer Hacking-3\\
+			Base Complexity : 5}}
+	
+	Sends continuous keep-alive signals to the target’s VR module, forcing them to stay connected to the Matrix even if they try to disconnect. 
+	
+	This program can only be effectively used on individuals that are in VR, only causing meaningless errors for individuals using terminals. While this program is running, successfully using the Control or Damage program against an individual causes link-locking. 
+	
+	Link-locking prevents a user from disabling or leaving VR through normal methods by overwriting any signals. This can be potentially lethal, as the user is unable to retreat from any dangerous situation without outside help.
+	
+	If a user wishes to jack out there are a couple routes, none that are easy. They can attempt to use the Control program to temporarily gain control over their cyberdeck's keep-alive systems, in which case they must win a Quick Contest versus the Link-Lock program with their Control program with a -3 modifier.
+	
+	Alternatively, they can attempt to simulate the Link-Lock's incoming signals in order to spoof their commands to the cyberdeck. They must also win a Quick Contest versus the Link-Lock program with their Spoof program with a -2 modifier.
+	
+	Next, they can attempt to jam the incoming keep-alive signals from the opposing decker. This does not stop the keep-alive signals, but it would - in theory - prevent them from reaching the user's systems and preventing jacking out. However, most competently designed Link Lock programs embed themselves in breached systems to prevent this exact flaw (Which is why they require a successful Control or Damage program use), which makes jamming the opposing decker have little effect (and may in fact, prove negative should the opposing decker disable their program and have no way to signal that to the worm in your system!).
+	
+	In the case that you already have access to the opposing decker's systems, you can attempt to simply disable this program through any conventional means to control programs: Alter to change the program, Control to signal for the program to end or change, etc.
+	
+	Lastly, you can take the painful road by hard jacking out. This is where a friendly companion of your physically either unplugs your connection to your cyberdeck, turns it off, or just breaks it. This immediately requires the user to roll HT as if resisting the effects of the Damage program, with a -4 penalty. In cases where there is not a Link-Lock program running and the user is hard jacked out, this roll is made at no penalty.
+	
+	\subsection{Cyberdecks}
+	
+	\subsubsection*{Erika MCD-1}
+	
+	\textit{\textcolor{NavyBlue}{Cost: 412.5¥, Weight: 5.5 lbs. LC 4}}
+	
+	A medium-sized, bottom tier cyberdeck about the size of a laptop, with built-in Basic VR, a Portable Terminal (-1 to skill), and built in Cable Jack and Tiny Radio Communicator.
+	
+	Equipment: Cable Jack, Portable Terminal, Small Radio Communicator (10 mi range).
+	
+	\textit{\textcolor{OliveGreen}{Statistics: Personal Computer, Complexity 4 (Slow, \(\times\)1/20¥; Cyberdeck, \(\times\)1.25¥), 62.5¥, 5 lbs; Portable Terminal, 50¥, 0.5 lbs; Basic VR, Complexity 4, 300¥}}
+	
+	\subsubsection*{Microdeck Summit}
+	
+	\textit{\textcolor{NavyBlue}{Cost: 435¥, Weight: 0.55 lbs. LC 4}}
+	
+	An alternative to the MCD-1, this small cyberdeck is about the size of a phone, with built-in Basic VR, a Datapad (-2 to skill), and built in Cable Jack and Tiny Radio Communicator. It trades off a bit of cost in return for portability.
+	
+	Equipment: Cable Jack, Portable Terminal, Tiny Radio Communicator (1 mi range).
+	
+	\textit{\textcolor{OliveGreen}{Statistics: Small Computer, Complexity 4 (Cyberdeck, \(\times\)1.25¥), 125¥, 0.5 lbs; Datapad, 10¥, 0.05 lbs; Basic VR, Complexity 4, 300¥}}
+	
+	\subsubsection*{Fairlight Excalibur}
+	
+	\textit{\textcolor{NavyBlue}{Cost: 1,878,550¥, Weight: 10.5 lbs., LC 2}}
+	
+	The holy grail of decks, the Fairlight Excalibur has practically every bell and whistle that one could want. It keeps its hefty size - a large laptop or small workstation - largely as a sign of its status, while providing the computing power of an entire business and then some.
+	
+	The Excalibur is Complexity 7, Hardened, and can run 50\% more programs that normal. It also has Total VR built-in for the system, a portable terminal (Completely detachable for most decker's purposes), and a Small Radio Communicator that also comes with a built in Secure Encryption Chip, which makes communications basically uncrackable to anything but Quantum Computers at the expensive of a 1 second delay.
+	
+	Equipment: Cable Jack, Portable Terminal, Secure Encryption Chip, 500¥; Small Radio Communicator (1 mi range).
+	
+	\textit{\textcolor{OliveGreen}{Statistics: Personal Computer, Complexity 7 (Genius, \(\times\)500¥; Hardened, \(\times\)2¥, \(\times\)2lb; High-Capacity, \(\times\)1.5¥; Cyberdeck, \(\times\)1.25¥), 1,875,000¥, 10 lbs; Portable Terminal, 50¥, 0.05 lbs; Basic VR, Complexity 6, 3,000¥}}
+	
+	\subsection{Decryption Computers}
+	
+	Due to the advent of superior computing power and quantum computing, encryption is not a given for security. Here are some devices designed to be used alongside decks for decrypting files or communications.
+	
+	These usually do not come with any terminals, instead designed to be linked up with driving computers that send them information for decryption, without slowing down the original computer in the meantime.
+	
+	\subsubsection*{Standard Decryption Computer}
+	
+	\textit{\textcolor{NavyBlue}{Cost: 5,500¥, Weight: 2 lbs. LC 3}}
+	
+	This computer is a workhorse for decryption purposes. It has Complexity 10 for the purposes of decryption, meaning it takes 36 seconds per attempt for Basic Encryption and 1 hour per attempt for Secure Encryption. As well, it comes with a library of hacks, flaws, and exploits for known Encryptions while provides a +1 (Quality) bonus to your Cryptography rolls.
+	
+	However, while the computer can perform basic tasks, it cannot switch out programs, leaving it dedicated to the task of decryption.
+	
+	Equipment: Cable Jack, Small Radio Communicator (10 mi range).
+	
+	\textit{\textcolor{OliveGreen}{Statistics: Personal Computer, Complexity 5 (Dedicated, \(\times\)0.5¥ \(\times\)0.2lb; Quantum, \(\times\)10¥, \(\times\)2lb), 5,000¥, 2 lbs; Decryption Program, 500¥}}
+	
+	\subsubsection*{Small Decryption Computer}
+	
+	\textit{\textcolor{NavyBlue}{Cost: 1,000¥, Weight: 1 lbs. LC 3}}
+	
+	A smaller computer for hackers on a budget or on the go. It has Complexity 9 for the purposes of decryption, meaning it takes 6 minutes per attempt for Basic Encryption and 3 hours per attempt for Secure Encryption. As well, it comes with a library of hacks, flaws, and exploits for known Encryptions while provides a +1 (Quality) bonus to your Cryptography rolls.
+	
+	However, while the computer can perform basic tasks, it cannot switch out programs, leaving it dedicated to the task of decryption.
+	
+	Equipment: Cable Jack, Small Radio Communicator (10 mi range).
+	
+	\textit{\textcolor{OliveGreen}{Statistics: Small Computer, Complexity 4 (Dedicated, \(\times\)0.5¥ \(\times\)0.2lb; Quantum, \(\times\)10¥, \(\times\)2lb), 500¥, 0.2 lbs; Decryption Program, 500¥}}
+	
+	
+	\subsubsection*{Beefy Decryption Computer}
+	
+	\textit{\textcolor{NavyBlue}{Cost: 50,500¥, Weight: 16 lbs. LC 3}}
+	
+	An extremely beefy computer for hackers who want near real-time decryption of almost any system. It has Complexity 11 for the purposes of decrpytion, meaning it takes 3 seconds per attempt for Basic Encryption and 6 minutes per attempt for Secure Encryption. As well, it comes with a library of hacks, flaws, and exploits for known Encryptions while provides a +1 (Quality) bonus to your Cryptography rolls.
+	
+	However, while the computer can perform basic tasks, it cannot switch out programs, leaving it dedicated to the task of decryption.
+	
+	\textit{\textcolor{OliveGreen}{Statistics: Microframe Computer, Complexity 6 (Dedicated, \(\times\)0.5¥ \(\times\)0.2lb; Quantum, \(\times\)10¥, \(\times\)2lb), 50,000¥, 16 lbs; Decryption Program, 500¥}}
+	
+	\subsection{Guidance}
+	
+	When designing matrix opposition, it can be pretty daunting to individuals who don't understand networking or computer science. While going off gut intuition and Hollywood style hacking films can lead to some pretty acceptable results, putting in the extra level of realism can simultaneously make the security feel more fleshed out and realistic, while also making it more difficult without resorting to simply increasing Skill Levels.
+	
+	\subsubsection{Networks}
+	
+	Networks are connections of computers that are connected to each other via ethernet (physical wires) or remotely (wifi). In Shadowrun, the vast majority of Networks are composed of almost entirely - if not entirely - remote connections. 
+	
+	This is done for a variety of reasons: Physical technology has lagged behind remote technology, GOD serves as a police force for remote networks, and the ever classic convenience and cost - it's just more cost and time efficient in the grand scheme to coordinate with the greater remote Matrix than to be an eclectic company.
+	
+	That being said, there are some situations where physicals networks are still used. The most obvious is the situation where devices are still plugged via cable to a computer, such as an MRI being physically plugged into the computer that runs it. The less obvious ones are situations where taking the difficult road is worth it, such as protecting sensitive information (Trade Secrets, Research), paranoid individuals' home servers, or old systems that would cost more to upgrade than maintain.
+	
+	When designing a network for a run, it helps to know three broad types of networks found in the Matrix: The Matrix itself, an intranet, and an extranet. 
+	
+	The Matrix is the remote connections of all the computers available to metahumanity - plus something.. else, if the stories were to be believed. It's made up of a very large amount of networks, ranging from home servers to AAA office hosts, that are all connected to their Matrix provider. 
+	
+	A Matrix provider is a company such as NeoNet (Rest in peace) that serves Matrix traffic from network to network, provides maintenance and/or customer support for networks and hosts, and connects grids on the Matrix. A Matrix provider connects networks through special services; they rent out connections that are difficult to maintain (Such as cross-continental cables), maintain licenses for special services that keep track of internet traffic and route it to locations, and maintain hardware to perform those services. In essence, they maintain licenses and hardware that allows them to connect networks and grids to other networks and grids.
+	
+	The nice thing about Matrix providers, is that as long as you have access to a computer or service that uses them (Such as a home subscription, public wifi, or a cracked grid), you can access any computer that the Matrix provider's software has interacted with before (provided it is still online, available, and unchanged) simply by routing your traffic to other computers that can eventually route your traffic to your destination. This allows you to overcome many limitations of range when it comes to the Matrix, but does restrict you to accessing those destinations through their expected routes - as opposed to say, hacking into the building by taking apart a camera or stealing a commlink. \textcolor{Blue}{\href{https://blog.thelifeofkenneth.com/2017/11/creating-autonomous-system-for-fun-and.html}{For further reading by interested readers.}}
+	
+	An Intranet is a private network that is set up to only allow access to individuals from a company internally. Usually this is done by setting up ICE that block all incoming traffic to company devices, instead only allowing traffic to be routed through dedicated servers set up to handle outside data; this means that (without hacking in), a user would not be able to communicate with a commlink on the Intranet directly, but might be able to access it by sending data through a more secure central server. Sometimes, this is done via physical cables only (mostly in sensitive locations only), where company commlinks have their wireless capabilities removed and can only connect to the internet by sending and receiving data through that central server - if at all!
+	
+	An Extranet, like an Intranet, is a private network for a company. However, Extranets meant to serve users from outside a normal company rather than inside. Most often, this takes the place of things like public websites, user login and services, etc, basically anything that someone not part of the company can connect to. These can have varying degrees of connection to the company's Intranet as well; the company may set up a VPN that allows outside computers using it to access the Intranet, certain non-sensitive parts of the Intranet may be accessible upon authorization, etc. The lines can get quite blurry.
+	
+	On any network, a given account is provided permission to do a variety of tasks, while prevented from performing others. You can generally break permission sets into three groups: User, Security/Dev, and Admin. 
+	
+	User account permissions are the vast majority, being made up of anyone who does not need specialized access to the network itself. They are usually limited in altering anything in the network and on their computer \textit{at all}, and if they can alter anything it is usually limited to things directly related to their job (e.g. research files stored remotely for a scientist). Some users have very expansive lists of things related to their job, such as software developers, which can lead to them having much more permissions than others. 
+	
+	Security accounts are used to provide general IT and cybersecurity services to the network, meaning that their permissions are often much more relaxed. They are usually able to access wide swathes of the network, remotely control company computers (sometimes without notification!), access security features such as ICE and programs, and more. They are however, limited in that they are still restricted to the role of providing IT and cybersecurity services - not playing GOD; this means that they can't often disable security entirely, allow illicit data, or delete digital records, but this can vary based on the needs of the company - and often times can be largely circumvented.
+	
+	Admin accounts are entirely in control of the network. If it is possible to do something on the network, admins can do it. Often times, this does not include people like CEOs and is instead limited to leadership of IT, Cybersecurity, etc.
+	
+	When designing a network, it's generally important to know a small list of things: 
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item Who provides the network its connection to the Matrix (if at all)? 
+		\item How many program slots are taken up by security programs? How much by company use / free-floating?
+		\item Does the company have an Intranet?
+		\begin{itemize}
+			\itemsep 0pt
+			\item What traffic might it allow directly to devices on the intranet, if any at all?
+			\item What broad categories of accounts are on the network? Users (What jobs for each?), Security, and Admin.
+			\item What are the stats of the servers hosting the intranet? Especially, the programs used to provide ICE and Security?
+			\item Does the company allow remote access via VPN?
+		\end{itemize}
+		\item Does the company have an Extranet?
+		\begin{itemize}
+			\itemsep 0pt
+			\item What services is hosted on the Extranet? A public website, login portal, VPN?
+			\item Is any part of the Intranet accessible to the Extranet?
+		\end{itemize}
+		\item Is any part of the network airgapped (Cut off from the internet)?
+		\item Is any part of the network physical instead of remote?
+		\item How is data/paydata stored? Is it kept on group servers in shared folders so everyone can access it? Is it carried between computers on physical media for security? Is it kept on individual computers?
+		\item What is the networks response to intruders?
+		\begin{itemize}
+			\itemsep 0pt
+			\item Does it use lethal measures like Black IC?
+			\item How does it respond to accidents/false flags? Does it care if a worker gets Black IC'ed?
+			\item What defenses (Programs, hardware, etc) are prepared? How do they launch if set off unsupervised?
+		\end{itemize}
+	\end{itemize} 
+	
+	\subsubsection{Hosts}
+	
+	Hosts are the colloquial term for networks on the Matrix. In Shadowrun lore, there is some discrepancy on whether they have any physical presence at all, or are entirely run on some mix of computing power stolen from the wider Matrix and/or mystic Matrix techno-magic from dead Technomancers. 
+	
+	For the purposes of this book, we will take the stance that there are still hardware components to hosts, but their software aspect is still grown and cultivated by Matrix providers to be run on said hardware, providing the Complexity boost from TL 8 to TL 9 (Both to provide greater reason for physical infiltration and to make it logically consistent). 
+	
+	If the GM takes issue with this, simply change any hardware running a host (Which is generally the server portions of Intranets and Extranets) into a purely software format - and also try not to think very hard how it works.
+	
+	Hosts in base Shadowrun are generally given ratings from 1-12, ranging from home LANs to AAA Zero Zone equivalents, which determine how difficult they are to hack. In GURPS, the skill of a network's ICE program is a modifier to the Spyder's (or whomever set up/maintains the host) skill, based on Complexity; as such, the rating of a host is dependant on the Spyder's base skill and the Complexity of the host.
+	
+	Below is a table that provides a range of example Spyder Skills, Complexities, and total Effective Skill for Hosts, given by a Rating system similar to Shadowrun's original style.
+	
+	\begin{center}
+		\begin{tabularx}{0.47\textwidth}{|c|c|c|c|}
+			\hline
+			Rating\footnote{See Section \ref{Host Ratings BTS}} & Spyder Skill\footnote{All SL are determined for Hard Skills. Lower by one for Very Hard Skills. } & Complexity & Effective Skill \\
+			\hline
+			\hline
+			1 & 4-7 & 4 & 4-8 \\
+			2 & 7-8 & 4 & 7-9 \\
+			3 & 7-8 & 5 & 8-10 \\
+			4 & 10-11 & 5 & 11-12 \\
+			5 & 10-11 & 6 & 12-14 \\
+			6 & 10-12 & 6 & 12-15 \\
+			7 & 10-14 & 6 & 12-17 \\
+			8 & 11-14 & 7 & 14-18 \\
+			9 & 13-15 & 7 & 16-19 \\
+			10 & 14-16 & 8 & 18-21 \\
+			11 & 15-17 & 8 & 18-22 \\
+			12 & 16-19 & 8-9 & 20-25\\
+			\hline
+		\end{tabularx}
+	\end{center}
+	
+	Another important consideration when designing hosts is software. It can be tempting to see Complexity 7 Hosts as an opportunity to slap Complexity 7 ICE on them, but hosts have further purpose than to be literal brick walls!
+	
+	Hosts have limited program slots/processing power, which has to be used providing their services. If an admin takes their Complexity 7 Host and runs a Complexity 7 ICE and Listen on it at all times, there would be no program slots left for any non-trivial commercial use!
+	
+	How much of a host's program slots are left to commercial use is a fine art that is best determine by the GM based upon the host's needs. A decent range is around 1/5 - 1/3 of the program slots reserved for commercial use. However, some considerations are: 
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item How many employees and customers access the host regularly? 
+		\item Is the work done on the host software dependant (Skills with TL/9)?
+		\item Does the work require lots of large services (Network routing, communications, traffic systems, etc)?
+	\end{itemize}
+	
+	There is one caveat to this advice: some companies will have dedicated servers that are set up to handle their firewall and security. 
+	
+	In such a case, \textit{all of the program slots} can be used for security purposes! However, these are often much less powerful than the host as a whole, so the effect is not that different.
+	
+	\begin{wrapfigure}[17]{l}{70pt}
+		
+	\end{wrapfigure}
+	
+	\subsubsection{Distributed Processing}
+	
+	Sometimes, it can be beneficial to run a large number of computers simultaneously that act as one larger computer. This is often used in the case of supercomputers and botnets, leveraging the easier accessibility of smaller computers to create a more powerful group.
+	
+	Distributed systems determine the total power of the distributed systems as if they were one. Because each step of complexity is a tenfold increase in power, 10 lower complexity devices should be treated as 1 Complexity higher, and so on. 
+	
+	For singular tasks that only affect parts of the network, treat them as either a smaller distributed network or a singular computer as necessary. If any part of the network is disabled, the overall statistics need to be re-calculated; it is adviseable to keep some buffer space then, in case an opponent disables some devices.
+	
+	For software purposes, each computer needs to run software for communicating and coordinating with the network; usually this is a base Complexity 2 Listen program, but in the cases where there are orders of magnitudes of devices, the GM may increase the required Complexity.
+	
+	A quick calculation is: if a piece of software needs to be run by every computer individually, increase its effective Complexity alongside the network's Complexity. Singular programs split across the network can be run using the combined complexity.
+	
+	When working with a network of varying Complexities, it is recommended to convert all of them to one level of Complexity (e.g. Convert 1 Complexity 5 computer to 100 Complexity 3 computers for calculations).
+	
+	\textit{\textcolor{OliveGreen}{Example: Mark, master decker, is running a distributed network of 10,274 Small Computers, made up of commlinks, smart-home devices, and other small interfaces. The overall Complexity of the Network is 8, which the GM has ruled needs a Complexity 2 Listen program on each device, which could normally run 2,000,000 Complexity 2 programs, however because it is technically running 10,274 programs, the Listen program is treated as Complexity 6 on the Network.}}
+	
+	Acting in a distributed manner has a number of benefits and drawbacks. Most importantly, it allows a decker to make use of multiple computer's processing power, which can help overcome low Complexity limitations. 
+	
+	As well, it provides multiple vectors for attack, while limiting reprisals, since the decker can attack through any device (or all of them!), while the enemy can only attack devices that they know of and must trace the network's connection back to the master computer if they wish to deal any real damage. 
+	
+	If any device goes down too, it does not immediately take down the decker, instead limiting the effectiveness of the network somewhat.
+	
+	However, there are some downsides too. Achieving higher complexities requires an extremely large amount of devices (Complexity 7 Requires 1,000 Small Computers weighing 500 lbs), which can be logistically hard to store and often weigh more than a single computer. 
+	
+	As well, each computer needs to be running software for communicating with the rest of the network, which can reduce the amount of programs available, and can be prohibitively expensive if they have to purchase all of the software - although it should be possible for most deckers to write the software themselves. 
+	
+	When working in very large groups, a network can be very difficult to hide from observers - especially if the computers in the network were not legally acquired. Many thousands of un-noteworthy computers all turning on a single target is something that will attract more attention than if one computer had originally, especially to organizations like GOD, which have a big picture view of the Matrix as a whole.
+	
+	\textit{\textcolor{OliveGreen}{Mark's network weighs 5,137 lbs and costs 1,027,400¥ in hardware and 308,220¥ in software (If the GM does not let him duplicate code!); compared to a Macroframe weighing 4,000 lbs and costing 1,000,000¥ in hardware, it will certainly cost more and take up more space, but it is also much harder to defeat, requiring an opponent to either take down all computers, or successfully trace the Listen programs back to Mark's master computer.}}
+	
+	
+	\subsubsection{Software Packages}\label{software_packages}
+	
+	Creating Software, especially when those pieces interact with each other like with Firewalls, can be a daunting task for some. As such, I've assembled some example setups of Software that can be used for inspiration, quick use, or anything of the sort.
+	
+	All of these packages come in a Level, starting at 0. Levels determine what Complexity the software is run at, which in turn determines skill defaults as covered in Cyberpunk. As such, for more powerful hardware, simply increase the Level for a more powerful piece of software.
+	
+	The total Complexity of the Package is listed in a format like: x2 C3; x3 C(3+L), which indicates the packages has 2 Complexity 3 programs that don't increase with Level, and 3 Complexity 3 Programs that increase with Level. In this case, a Level 3 Package would have 2 Complexity 3 Programs and 3 Complexity 6 Programs, and may be appropriate for a Host or Device of Complexity 7 or more.
+	
+	\paragraph{Firewall}\label{firewall}
+	
+	Firewalls are programs that are, at their core, meant to control what traffic comes in or out of a computer. 
+	
+	Certain superior models will also perform actions upon suspicious behaviour, such as alerting admins, tracing the connection, or in extreme cases attacking the connection.
+	
+	They aren't necessarily limited to that however! Firewalls may shutdown the computer if triggered, spawn IC to respond, delete files when alerted, trigger whole suites (such as a Data Bomb!), or more. There's plenty of possibility, so get creative.
+	
+	\textbf{Inferior Firewall} For this simple Firewall, the ICE prevents access to the device, while the Listen allows authorized users to bypass the ICE.
+	
+	\vbox{
+		\begin{itemize}
+			\itemsep 0pt
+			\item x2 C(3+L)
+			\item ICE :: Complexity 3 + L
+			\item Listen :: Complexity (2+1) + L
+		\end{itemize}
+	}
+	
+	\textbf{Standard Firewall} A standard Firewall: the ICE protects the device, the Listen allows authorized users access, the Analyze monitors the security of the ICE and Listen, and the Trigger acts when anomalies are detected by the Analyze - usually it calls the admins.
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item x1 C3; x3 C(3+L)
+		\item ICE :: Complexity 3 + L
+		\item Listen :: Complexity (2+1) + L
+		\item Analyze :: Complexity 3 + L
+		\item Trigger :: Complexity 3
+	\end{itemize}
+	
+	\textbf{Superior Firewall} Closer to an IPS, this Firewall works the same as above, except instead of the Trigger just calling the admins, it also attempts to find the malicious connection and Analyze it (For things like IP, Device ID, etc).
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item x1 C3; x5 C(3+L)
+		\item ICE :: Complexity 3 + L
+		\item Listen :: Complexity (2+1) + L
+		\item Analyze :: Complexity 3 + L
+		\item Trigger :: Complexity 3
+		\item Search :: Complexity 3 + L
+		\item Analyze :: Complexity 3 + L
+	\end{itemize}
+	
+	\paragraph{Matrix Search / Perception}
+	
+	Used to find and analyze information on a network. It may require breaching or spoofing ICE to gain all of the information.
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item x2 C(3+L)
+		\item Search :: Complexity 3 + L
+		\item Analyze :: Complexity 3 + L
+	\end{itemize}
+	
+	\paragraph{Hack on the Fly}
+	
+	This is the method for stealthily infiltrating a Host or network. While it's simple in design, it is almost never in execution. The decker should thoroughly analyze the security before attempting, as many firewalls are made up of multiple constituent parts that must be unravelled in turn. 
+	
+	At its simplest, this means spoofing an Analyze watching ICE to give an OK, then spoofing the Listen to gain access. Further complicated systems may require Spoofing multiple programs (or even devices!) at once in order to prevent any from noticing.
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item x1 C(4+L)
+		\item Spoof :: Complexity 4 + L
+	\end{itemize}
+	
+	\paragraph{Sleaze}
+	
+	This is used to prevent the decker from going noticed while in the system. It can prevent them from being detected, analyzed, searched, eavesdropped, etc. 
+	
+	However, if a Spyder already has cause for concern, inconclusive results could give them more reason to continue investigating.
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item x1 C(4+L)
+		\item Stealth :: Complexity 4 + L
+	\end{itemize}
+	
+	\paragraph{Brute Force}
+	
+	Usually the quickest way to enter the system, this method penetrates and disables an ICE in one go. 
+	
+	Many security setups have Analyze programs set up to detect this sort of entry, multiple layers of ICE to slow them down, or simply human eyes that check on the program, all of which can make this form of entry go loud. Preventing that can require combining this with other tactics, such as Spoof or Control.
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item x1 C(3+L)
+		\item Breach :: Complexity 3 + L
+	\end{itemize}
+	
+	
+	\subsubsection{Spyders}
+	
+	Spyders serve as the network IT and cybersecurity for corporations. Usually, the term Spyder implies an  individual of competence, but in reality almost anyone can be put in charge of such a position, regardless of credentials - which is often the case in smaller businesses.
+	
+	\subsubsection*{Standard Spyder}
+	
+	\textbf{Attributes:}
+	ST 10 [0]; DX 10 [0]; IQ 11(12) [15]; HT 10 [0]
+	
+	\textbf{Secondary Attributes:} HP 10 [0]; Per 11 [5]; Will 11 [7]; FP 10; Basic Speed 5.0; Basic Move 5
+	
+	\textbf{'Ware:} 
+	Wireless Datajack (Base Grade) [6, 12,000¥]; Cerebral Booster 1 (Cultured Bioware, Base Grade) [5, 30,000¥]
+	
+	\textbf{Primary Skills:} 
+	Computer Operation (E) IQ+2 [4]-14; Computer Programming (H) IQ+1 [8]-13; Computer Hacking (VH) IQ; Electronics Operation/TL9 (Security) (A) IQ+1 [4]-13; Electronics Operation/TL9 (Surveillance) (A) IQ [2]-12; Electronics Repair/TL9 (Computers) (A) IQ [2]-12; Expert Skill (Computer Security) (H) IQ+1 [8]-13; Research (A) IQ+1 [4]-13
+	
+	\textbf{Secondary Skills:} 
+	Area Knowledge (Cyberspace) (A) IQ-1 [1]-11; Current Affairs/TL9 (Cyberspace) (E) IQ+1 [2]-13; Mathematics/TL9 (Applied) (H) IQ-2 [1]-10; Mathematics/TL9 (Computer Science) (H) IQ [4]-12
+	
+	\textbf{Perks:}
+	Console Monkey [1]
+	
+	\subsection{IC}
+	
+	Intrusion Countermeasures (Not to be confused with the program ICE), are collections of programs that are designed to automatically respond to certain threat vectors inside of a host. These can provide a staggering range of capabilities, from Patrol IC constantly scanning credentials, to the notorious Black IC trying to flatline unauthorized users.
+	
+	When building a host, it's a good idea to decide what IC are running on the server at all times, alongside what their automated response schedule looks like. Most Hosts that are of decent size will be running Patrol IC at all times, focused on tasks such as scanning all users, watching important files, or scanning for malicious activity. Some may run additional IC as well to prevent loading times.
+	
+	It's important to take into consideration the fact that IC are \textit{dumb.} They are, at best, competitive with Pilot programs, and as such should not be trusted to actively deal with intrusion unsupervised. Most importantly, this implies that a host \textit{should never} leave lethal (Or even less-than-lethal) IC running 24/7, unless they are running a draconian ship! 
+	
+	It only takes one researcher accidentally using the wrong password, one intern curiously searching the directory, one person accidentally opening a file, and so on in order to end up with a hurt or killed person on your network! The only worse thing than getting your valuable research stolen, is killing those who would make it (or re-make it) in the first place!
+	
+	This is counterbalanced by the fact that IC can take quite some time to load, or alternatively must take up significant resources, which causes penalties to rolls. IC still follow the Invoking Programs rules (Pyramid \#3/21 p11), meaning that each subprogram must be loaded once per turn, or alternatively multiple subprograms may be loaded at once at the cost of -1 to all rolls for each subprogram past the first. Deckers should take advantage of the spin up times to either disable the IC and/or its subprograms or complete their objective and jack out.
+	
+	\subsubsection{Black IC}
+	
+	\subsubsection{Patrol IC}
+	
+	\subsection{Sample Hosts}
+	
+	\subsubsection{The Seattle Metroplex Administration Host}
+	
+	\textbf{Host Computer:}
+	Mainframe, Complexity 7;
+	
+	\textbf{Programs:}
+	1 Complexity 7, Dedicated to employee and public use. Provides tools, searching, payment, sign in, system controls, etc. If the player needs to access these (For instance, accessing the payment security that the host runs themselves), they are usually Complexity 5 programs.
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item 1 Complexity 6 ICE (+3), providing security for the host
+		\item 1 Complexity 6 Listen (+4), letting through employees and citizens with SINs
+		\item 1 Complexity 6 Analyze (+3), watches the ICE and Listen programs to detect any signs of hacking.
+		\item 1 Complexity 3 Trigger, alerts system admins if there is any sign of hacking via Analyze.
+	\end{itemize}
+	
+	\textit{Leftover Space:}
+	\begin{itemize}
+		\itemsep 0pt
+		\item 6 Complexity 6 Programs
+		\item 9 Complexity 3 Programs
+	\end{itemize}
+	
+	\textbf{Spyder:}
+	2 Standard Spyders on rotating 12h shifts.
+	
+	
+	\subsection*{Computer Templates}
+	
+	For templates on computers, see \hyperref[ai_computer]{the AI section on computer bodies.}
+	
+\end{multicols*}
