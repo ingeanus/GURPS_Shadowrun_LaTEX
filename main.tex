@@ -7,6 +7,7 @@
 \usepackage{tabularx}
 \usepackage{wrapfig}
 \usepackage{graphics}
+\usepackage{graphicx}
 \usepackage{changepage}
 \usepackage{wrapfig}
 \usepackage{geometry}
@@ -28,6 +29,9 @@
 	\tableofcontents
 	
 	\newpage
+	\includegraphics*[viewport = 0 0 512 768]{cover_image.png}
+	
+	\includegraphics*[viewport = 512 0 1024 768]{cover_image.png}
 	
 	\input{rules}
 	
@@ -38,6 +42,9 @@
 	\input{metatypes}
 	
 	\newpage
+	\includegraphics*[viewport = 100 0 628 768]{magic_cover.png}
+	
+	
 	\input{magic}
 	
 	\newpage
