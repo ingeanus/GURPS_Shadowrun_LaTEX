@@ -426,6 +426,8 @@
 	 \subsubsection{Ammunition}
 	 Overall, the story is simply: Halve the weight of the ammo. Some ammo isn't in HT though. 
 	 
+	 10mm MF is based on 10x25mm auto.
+	 
 	 28G is 0.07  WPS. and 0.4\$ base.
 	 
 	 7.62mm CL is based on the 7.62x39mm.
@@ -436,23 +438,25 @@
 	
 	\subsubsection{Holdout Pistols}
 	
-	Fichetti Needler: Flechette rounds are always a bit of a hassle on small caliber weapons. We'll assume it's the minimum caliber (10mm), This gives NP of (10mm/2mm)\^3 / 40 = 3.125, giving NS 0.57. 10mmCLP is consistently 3d pi+, 3d*NS=5.88~==1d+2.
+	Fichetti Needler: Flechette rounds are always a bit of a hassle on small caliber weapons. We'll assume it's the minimum caliber (10mm), This gives NP of (10mm/2mm)\^3 / 40 = 3.125, giving NS 0.57. 10mmCLP is consistently 3d pi+, 3d*NS=5.88~==1d+2. For it's weight, I'm going in between the other two palm pistols for 1.2 lbs unloaded. Ammo is 4*0.021*1.1 = 0.0924
 	
 	Streetline Special: Baby Browning. .25 ACP with TL9 improvements. This is one of the few cases I'll use the High-Tech ranges over Cole's, because 850/2,600 seems.. a bit off?
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 25000 6.4 15.6 6.4 53.6 180 1.8 3 6.4 180}}
 	
-	Walter Palm Pistol: Remington Model 95. Because of its high damage, we'll consider it in .45 ACP, like the Bond Arms Derringer.
+	Walter Palm Pistol: Remington Model 95. Because of its high damage, we'll consider it in .45 ACP, like the Bond Arms Derringer. That weights 18.5 oz so weight medium optimization it's (1.156)*.9 = 1.04. Ammo is .0235*2 = .047.
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 21875 11.43 23 11.43 76 230 1.5 5.5 11.43 230}}
 	
 	\subsubsection{Light Machine Guns}
 	
-	Ingram Valiant: This one is a bit difficult. There's no official art or description I could find, so all there is to go on is its 5.56 equivalent damage and clip size. Nothing stick, making me think it's an original. All in all, I think I'll base it off an M249, because its same caliber, relatively close clip size, and unrepresented elsewhere for how iconic it is.
+	Ingram Valiant: This one is a bit difficult. There's no official art or description I could find, so all there is to go on is its 5.56 equivalent damage and clip size. Nothing stick, making me think it's an original. All in all, I think I'll base it off an M249, because its same caliber, relatively close clip size, and unrepresented elsewhere for how iconic it is. I'm using LSAT weights. Ammo is 100*0.0135*1.6 (Plastic Drum) = 2.16.
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 68750 5.7 45 9.29 521 62 4.1 11.1 5.7 62}}
 	
 	GE Vindicator: While this is classified as an LMG minigun, it uses Gunner skill due to its use case. Because it has lower damage, it probably doesn't use 7.62 like its inspiration M134. We'll say it instead uses 5.56 like the XM214. The XM214 had pretty variable RoF from 7! to 100!, with some versions having 16! and 66!, and official in 16! and 100!. For rule of cool and nothing else I'll match the GAU-2B/A (HT 135) in 50! and 100!. ST is difficult: It's obviously much less than the 20M of the original and 17M of other MMGs which are 50lbs. It itself is clocking in with an empty weight of 22 (Before TL9 materials). It would also be above 22lb/11ST  or 30lbs/12STLMGs, due to lots of ammo, battery weight, ammo, and feeding system. I'm settling on a middle ground of 14ST for now. This also, really makes me question the clip sizes.. LMGs being 1/2 size is one thing... 1/5 - 1/10 for most miniguns? That's really low. This thing only gets 2-4 seconds of shooting.
+	
+	Weight is difficult here. We'll use the XM214's weight of 22 lb, with a medium optimization of 30\% for 15.4 lb. Add on 5 lb for integral D cell for 20.4 lb. Ammo is 200*0.0135*1.6 (Drum magazine as seen in art) = 4.32 lb.
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 68750 5.7 45 9.29 533 62 4.1 11.1 5.7 62}}
 	
@@ -462,7 +466,7 @@
 	
 	\subsubsection{Heavy Machine Guns}
 	
-	RPK HMG: The original RPK was an LMG in 7.62, so it will obviously not fit the bill here. However, the NVD (Or the Kord) both serve as a similar enough example that matches well in all aspects.
+	RPK HMG: The original RPK was an LMG in 7.62, so it will obviously not fit the bill here. However, the NSV (Or the Kord) both serve as a similar enough example that matches well in all aspects. I'll use the NSV Weight with heavy optimization for 40\% (55-16.9)*.6 = 22.86. Ammo is  100*0.155*1.1 (Estimate for disintegrating belt or similar method) = 17.05.
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 65000 12.98 108 12.98 1560 745 4.1 52 12.98 745}}
 	
@@ -478,13 +482,17 @@
 	
 	Colt America L36: Based off something like the Defender. Normal weights 24oz and edium weight optimization, so (1.5*0.9)=1.35. 11*0.0235*1.1 = 0.28.
 	
+	Fichetti: This one is likely an original, but it does bear a little resemblance to glocks. Either way, its stats align with 9mm, so we'll be using that. I'll make it's weight the Glock 19 with medium optimization, so (1.8-0.5)*.9 = 1.17. Ammo is 30*0.013*1.1 = 4.29.
+	
+	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 41125 9 19 9 115 124 1.85 8 9 124}}
+	
 	\subsubsection{Heavy Pistols}
 	
 	Ares Predator V: Seems like it was based off the Deagle. Light Optimization, since weight is an important feel for a Deagle gun, (4.6-0.6)*0.95 = 3.8. 15*0.0335*1.1 = 0.55
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 45000 12.7 33 12.7 152.4 300 1.6 9.625 12.7 300}}
 	
-	Ares Viper Silvergun: Once again, flechette guns are original. This one is intended to be more deadly than the Needler, so it'll have to be higher than 10mm. We'll go with 28 gauge (13.97mm), because it's common use, not large enough to be that comical, and will give a noticeable improvement from the minimum 10mm. NP = (13.97/2.13mm)\^3/40 = 7.1, NS = 0.38. Unfortunately, Cole's sheet won't do 28G well, and Ultratech shotguns are closer to a downgrade from High Tech ones (Shorter Range, same damage, similar shots and RoF, same pellet count, etc). 
+	Ares Viper Silvergun: Once again, flechette guns are original. This one is intended to be more deadly than the Needler, so it'll have to be higher than 10mm. We'll go with 28 gauge (13.97mm), because it's common use, not large enough to be that comical, and will give a noticeable improvement from the minimum 10mm. NP = (13.97/2.13mm)\^3/40 = 7.1, NS = 0.38. Unfortunately, Cole's sheet won't do 28G well, and Ultratech shotguns are closer to a downgrade from High Tech ones (Shorter Range, same damage, similar shots and RoF, same pellet count, etc). I'll give it 2.8 lb unloaded, inbetween most other ST 12 and 10 guns. Ammo is 30*0.035*1.1 = 1.155.
 	
 	As such, we'll have to eyeball. 12G slugs are 4d+4, functionally equivalent to 5d. A similar round to that is 5.56, which when TL9'ed usually becomes 6d. 6d/4 = 1d+2, which would imply +1 damage to buckshots. Because 28G would likely be 1 step worse than 20G, which is usually 1d pi-, this would imply 28G is 1d-1 pi- and becomes 1d pi- for TL9. This is 4d pi+, which becomes 1d+2 pi- flechettes. Since 20G is around 9†, if we lower to 7-8, then x1.5 we get ST 11 or 12. We'll go with 11 since it's considered a common weapon.
 	
@@ -498,58 +506,54 @@
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 21875 11.43 23 11.43 127 230 1.5 5.5 11.43 230}}
 	
-	Remington Roomsweeaper: Likely an original. Due to its DP it's likely not 12 gauge, 20 gauge would be around 13ST, so 28 gauge it is. To differentiate between the Silvergun, we'll go with 2..57mm flechettes. (13.97/2.57)\^3/40 = 4 = NP, so NS = 0.5. Since the Silvergun decided TL9 28G is 4d slugs, we get 2d pi-.
+	Remington Roomsweeaper: Likely an original. Due to its DP it's likely not 12 gauge, 20 gauge would be around 13ST, so 28 gauge it is. To differentiate between the Silvergun, we'll go with 2..57mm flechettes. (13.97/2.57)\^3/40 = 4 = NP, so NS = 0.5. Since the Silvergun decided TL9 28G is 4d slugs, we get 2d pi-. While similar in weight to the Silvergun, I'm gonna assume it's a bit more for its versatility. I'll make it 2.9 unloaded. 8*0.035*1.1 = .308.
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: None}}
 	
 	Ruger Super Warhawk: Obviously based on the Ruger Super Redhawk. The issue is that, the .454 Casull is MUCH more powerful on Cole's sheet, pushing 6d pi+. This is largely because it seems to overtune the velocity (Reaching 580 m/s instead of 490ish, which is still 5d+1). This seems to be a discrepancy just between Cole's and Hurst's work, and I'm in favor of Cole's more, since other less powerful rounds do 5d. So we'll TL9 ify from Cole's numbers, fudging them a bit to get the more correct velocity.
 	
-	Medium optimization, so (3.6-0.4)*0.9 = 2.88. 6*0.33 = 0.2.
+	Medium optimization, so (3.6-0.4)*0.9 = 2.88. 6*0.33 = 0.2. 
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 81250 11.43 35 11.43 330 335 1.5 1 11.43 335}}
 	
-	\subsubsection{Machine Pistols}
-	
-	Ares Crusader II: This one has no real equivalent. The best we can say is that it's high damage, high accuracy, but with large clip size. Sounds to me like a good old glock 18.
-	
-	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 41125 9 19 9 114 124 1.85 8 9 124}}
-	
-	Black Scorpion: CZ Scorpion.
-	
-	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 25625 8 17.3 8 115 73 1.35 9 8 73}}
-	
-	Steyr TMP: The.. uh the Steyr TMP.
-	
-	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 41125 9 19 9 130 124 1.85 8 9 124}}
-	
-	Fichetti: This one is likely an original, but it does bear a little resemblance to glocks. Either way, its stats align with 9mm, so we'll be using that.
-	
-	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 41125 9 19 9 115 124 1.85 8 9 124}}
-	
-	Taurus: Taurus makes a lot of revolvers. I'm choosing the Taurus Tracker due to their similar descriptions (Focus on ruggedness) and its ability to be chambered in both 357 and 38+P.
+	Taurus: Taurus makes a lot of revolvers. I'm choosing the Taurus Tracker due to their similar descriptions (Focus on ruggedness) and its ability to be chambered in both 357 and 38 Special +P. The original weighs 40 oz unloaded, and I think light optimization is best based on its description, so (2.5)*.95 = 2.38. For .357 it's 6*0.0175 = 0.105. For 38 special it's 0.0165*6 = 0.1
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 21875 9.1 29.3 9.1 165 125 1.5 6 9.1 125}}
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 43125 9 33 9 152 125 1.7 2 9 125}}
 	
+	\subsubsection{Machine Pistols}
+	
+	Ares Crusader II: This one has no real equivalent. The best we can say is that it's high damage, high accuracy, but with large clip size. Sounds to me like a good old glock 18. We'll go with medium optimization, so (2.6-1.1)*.9 = 1.35. For ammo, 40*0.013*1.1 = 0.572
+	
+	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 41125 9 19 9 114 124 1.85 8 9 124}}
+	
+	Black Scorpion: CZ Scorpion. Although I vaguely think High Optimization could work so such an old gun, I'm going to stick with Medium to be safe, (3.7-0.9)*.9 = 2.52. 35*0.009*1.1 = 0.347
+	
+	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 25625 8 17.3 8 115 73 1.35 9 8 73}}
+	
+	Steyr TMP: The.. uh the Steyr TMP. Medium Optimization (3.8-1)*.9 = 2.61. 30*.013*1.1 = .429
+	
+	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 41125 9 19 9 130 124 1.85 8 9 124}}
+	
 	\subsubsection{Rifles}
 	
-	AK-97: Based on the AK-47 of course. It's assumed to have a round similar to the 7.62x39mm, just with the increased performance that is seen at TL9. This was done by estimating the qualities of the 7mmCL, and then applying those improvements to the 7.62x39mm. 
+	AK-97: Based on the AK-47 of course. It's assumed to have a round similar to the 7.62x39mm, just with the increased performance that is seen at TL9. This was done by estimating the qualities of the 7mmCL, and then applying those improvements to the 7.62x39mm. The gun is considered rugged and heavy, so low Optimization (10\% for rifles), so (11.3-1.8)*.9 = 8.55. Ammo is 38*0.018*1.1 = 0.752
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 66000 psi, 7.36mm barrel bore, 39mm case length, 7.36mm chamber bore, 420mm barrel length, 122 grain bullet, 3 Aspect Ratio, 32mm burn length, 7.36mm caliber, 122 grain accelerated mass.}}
 	
-	Ares Alpha: This one is much simpler, as it seems to be a Shadowrun original, as such it's likely just a sane version of the Storm Carbine. I worked back from a semi-accurate 10mm round to 10mmCL, then modified it a bit to match High-Tech rules, such as being pi+. The grenade launcher is the Ultratech Grenade Launcher, losing 0.5 lbs for losing RoF 3, and gaining .25 + .15 lbs for 1 more grenade.
+	Ares Alpha: This one is much simpler, as it seems to be a Shadowrun original, as such it's likely just a sane version of the Storm Carbine. I worked back from a semi-accurate 10mm round to 10mmCL, then modified it a bit to match High-Tech rules, such as being pi+. The grenade launcher is the Ultratech Grenade Launcher, losing 0.5 lbs for losing RoF 3, and gaining .25 + .15 lbs for 1 more grenade. I'm basing its weight off of the SCAR-H, high optimization (8.8-1.6)*.8 = 5.76. 42*0.0415*1.1 = 1.92
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 35000 psi, 10.6mm barrel bore, 72.4mm case length, 10.6mm chamber bore, 400mm barrel length, 280 grain bullet, 3 Aspect Ratio, 60mm burn length, 10.6mm caliber, 280 grain accelerated mass}}
 	
-	Colt M23: Obvisouly based of the Colt series of rifles, likely the AR-15, but perhaps the M16. The round is based off the 5.56 with a proportional boosting similar to the 7.36 round.
+	Colt M23: Obvisouly based of the Colt series of rifles, likely the AR-15, but perhaps the M16. The round is based off the 5.56 with a proportional boosting similar to the 7.36 round. Medium optimization, (7.2-0.7)*0.85 = 5.525. Ammo is 40*0.0135*1.1 = .594
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 68750 psi, 5.7mm barrel bore, 45mm case length, 9.29mm chamber bore, 508mm barrel length, 62 grain bullet, 4.1 aspect ratio, 12mm burn length, 5.7mm caliber, 62 grain accelerated mass.}}
 	
-	FN HAR: is in a bit of a weird position. On the one hand, it has a lower damage than guns like the Ares Alpha, but is billed as a Heavy Assault Rifle, which is supported by its lower clip size and ostensibly being on the FN FAL. It may be based on the FAMAS, as seen by its video game depiction however. I've decided that lower damage alongside its video game depiction lean towards the FAMAS.
+	FN HAR: is in a bit of a weird position. On the one hand, it has a lower damage than guns like the Ares Alpha, but is billed as a Heavy Assault Rifle, which is supported by its lower clip size and ostensibly being on the FN FAL. It may be based on the FAMAS, as seen by its video game depiction however. I've decided that lower damage alongside its video game depiction lean towards the FAMAS. With medium optimization it's 7.96*.85 = 6.77. 35*0.027*1.1 = 1.04.
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics:  56000 psi, 7mm barrel bore, 43mm case length, 9mm chamber bore, 488mm barrel length, 189 grain bullet, 3 aspect ratio, 32mm burn length, 7mm caliber, 189 accelerated mass.}}
 	
-	Yamaha Raiden: Exact same as Ares Alpha, but with a longer barrel.
+	Yamaha Raiden: Exact same as Ares Alpha, but with a longer barrel. I'm just increasing its weight by 0.5, 5.76 + 0.5 = 6.26. Ammo 60*0.0415*1.1 = 2.739.
 	
 	\subsubsection{Shotguns}
 	
@@ -566,41 +570,41 @@
 	
 	For ranges, I'm just tacking on 1/8 to both (The TL8 Ranges ofc).
 	
-	Defiance T-250: This one is a bit tricky. Official art looks very much like the Remington 870, but Shadowrun already Remington 990. Even more so, the 990 doesn't particularly look like the 870, instead looking like a Benelli or Remington 887. As such, I'll let the Defiance be based off the 870... not that there's much difference in shotguns anyways.
+	Defiance T-250: This one is a bit tricky. Official art looks very much like the Remington 870, but Shadowrun already Remington 990. Even more so, the 990 doesn't particularly look like the 870, instead looking like a Benelli or Remington 887. As such, I'll let the Defiance be based off the 870... not that there's much difference in shotguns anyways. I'll use medium optimization for rifles, so (7.6-0.6)*.85 = 5.95. 5*0.065 = .325.
 	
-	Enfield: This one is also a bit tricky, but it's likely the USAS-12 based off its official art. Because of its much higher damage, I'll load it with 10G (Dear god).
+	Enfield: This one is also a bit tricky, but it's likely the USAS-12 based off its official art. Because of its much higher damage, I'll load it with 10G (Dear god). Medium Optimization, (14.2-2.1)*.85 = 10.285. The USAS Clip is extremely heavier than others, likely because it's SHELLS. Since it's twice as much as expected, I'll double this one too, for 10*0.075*1.1*2 = 1.65.
 	
-	PJSS: Another weird one. It's by description a double barreled shotgun, but doesn't look like that in the art... Oh well, double barreled it is.
+	PJSS: Another weird one. It's by description a double barreled shotgun, but doesn't look like that in the art... Oh well, double barreled it is. We'll base weight of the LeFever with heavy optimization, so (10.3-0.3)*.8 = 8. Ammo is  2*0.065 = .13.
 	
 	\subsubsection{SMGs}
 	
-	Colt Cobra TZ-120: The TZ is somewhat difficult because it doesn't have a clear description, drawing, or real world counterpart. The Cobra series are all revolvers and its folding stock makes it seem closer to a machine pistol than a straight up SMG. Its name is somewhat reminiscient of the CZ Scorpion too, but that matches with the Black Scorpion better, so we'll push closer to the CZ Evo 3.
+	Colt Cobra TZ-120: The TZ is somewhat difficult because it doesn't have a clear description, drawing, or real world counterpart. The Cobra series are all revolvers and its folding stock makes it seem closer to a machine pistol than a straight up SMG. Its name is somewhat reminiscient of the CZ Scorpion too, but that matches with the Black Scorpion better, so we'll push closer to the CZ Evo 3. That one is 6.10 LOADED. I could calculate GURPS magazine weight, but some decent sites say around 5.62 lbs unloaded. Medium optimization, using pistol ones, so (5.62)*.9 = 5.058. Ammo is 32*.0.013*1.1 = .458.
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 41125 9 19 9 115 124 1.85 8 9 124 }}
 	
-	FN P93 Praetor: Obviously based off the P90. As such, it got the upgraded 5.7 treatment. One of the noteworthy parts is that Cole's sheet has the 5.7x28mm's range much lower than the book.
+	FN P93 Praetor: Obviously based off the P90. As such, it got the upgraded 5.7 treatment. One of the noteworthy parts is that Cole's sheet has the 5.7x28mm's range much lower than the book. High optimization is possible, but the P90 is already a fair bit overoptimized, so I'm going with Medium for (6.6-1) = 5.04. Ammo is 50*0.0065*1.1 = .358.
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics:  62547.5, 5.7 28 6.2 264 31 2.25 4.2 5.7 31}}
 	
-	HK-227: This is likely either based off the popular HK MP/5/7 or the HK UMP. Given its lower damage, accuracy, and clip size, I'm going with the UMP.
+	HK-227: This is likely either based off the popular HK MP/5/7 or the HK UMP. Given its lower damage, accuracy, and clip size, I'm going with the UMP. Medium optimization, (6.5-1.6) = 3.6. Ammo is 28*.0235*1.1 = .724.
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 21875 11.43 23 11.43 200 230 1.5 5.5 11.43 230}}
 	
-	Ingram Smartgun X: Based off the Mac-10. Given the general upgrade treatment.
+	Ingram Smartgun X: Based off the Mac-10. Given the general upgrade treatment. Given it's considered a quality gun, we'll go with medium optimization over low, for (7.5-1.3)*.9 = 5.58. Ammo is 32*0.013*1.1 = 0.458.
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 41125 9 19 9 146 124 1.85 8 9 124}}
 	
-	SCK Model 100: This is a weird one. The \textcolor{Blue}{\href{https://en.wikipedia.org/wiki/New_Nambu_M66}{SCK-65}} was a Japanese test firearm that never made it production. However, its official arts looks strikingly like \textcolor{Blue}{\href{https://en.wikipedia.org/wiki/FB_PM-63}{the FB PM-63}}. I'm going to mostly take inspiration from the later, although it will be pretty modernized.
+	SCK Model 100: This is a weird one. The \textcolor{Blue}{\href{https://en.wikipedia.org/wiki/New_Nambu_M66}{SCK-65}} was a Japanese test firearm that never made it production. However, its official arts looks strikingly like \textcolor{Blue}{\href{https://en.wikipedia.org/wiki/FB_PM-63}{the FB PM-63}}. I'm going to mostly take inspiration from the later, although it will be pretty modernized. We know it's mass was 3.53 lb, which I'll take as unloaded and add low optimization, since it seems to be on the low end already, for (3.53)*.9 = 3.177. Ammo is 30*0.013*1.1 = 0.429.
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 41125 9 19 11 164 124 1.85 8 9 124}}
 	
-	UZI IV: Easily just the Uzi at TL9. Due to the fact that it has lower accuracy and damage than its comparables, I'm opting that it has a much shorter barrel than the original.
+	UZI IV: Easily just the Uzi at TL9. Due to the fact that it has lower accuracy and damage than its comparables, I'm opting that it has a much shorter barrel than the original. Medium optimzation, for (8.8-1.1) = 6.93. Ammo is 24*0.013*1.1 = 0.343.
 	
 	\textit{\textcolor{OliveGreen}{Cole Spreadsheet Statistics: 41125 9 19 9 120 124 1.85 8 9 124}}
 	
 	\subsubsection{Tasers}
 	
-	These are a lot easier. The Defiance can just be a stronger normal taser, while the Pulsar I simply doubled range to account for it being wireless. Other than that it's standard changes like shots and RoF.
+	These are a lot easier. The Defiance can just be a stronger normal taser, while the Pulsar I simply doubled range to account for it being wireless. Other than that it's standard changes like shots and RoF. Given that their powers are all stronger than a normal taser, I'll keep their weights.
 	
 	\subsection{References}
 	
