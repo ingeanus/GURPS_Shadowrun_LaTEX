@@ -18,6 +18,31 @@
 	top=10mm,
 }
 
+
+\usepackage{pgf}
+\usepackage{pgfpages}
+
+\pgfpagesdeclarelayout{boxed}
+{
+	\edef\pgfpageoptionborder{0pt}
+}
+{
+	\pgfpagesphysicalpageoptions
+	{%
+		logical pages=1,%
+	}
+	\pgfpageslogicalpageoptions{1}
+	{
+		border code=\pgfsetlinewidth{1pt}\pgfstroke,%
+		border shrink=\pgfpageoptionborder,%
+		resized width=1.0\pgfphysicalwidth,%
+		resized height=1.0\pgfphysicalheight,%
+		center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+	}%
+}
+
+\pgfpagesuselayout{boxed}
+
 \title{GURPS Shadowrun}
 \author{ingeanus}
 \date{November 2022 (Ver 1.0)}
