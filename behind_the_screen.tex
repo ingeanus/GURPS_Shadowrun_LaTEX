@@ -215,9 +215,12 @@
 	
 	As such, we have to include the +20\% modified by Costs FP/HP. This doesn't cause multiple stacking of FP/HP Loss as a meta-trait (i.e. using the whole affliction causes it). This may not be 100\% correct, but it feels way more accurate.
 	
-	\paragraph{Analyze Device}: Levels: 40.98 43.85925 46.50675 48.81675 50.67675 51.97425 52.76175 53.57175
+	\paragraph{Analyze Device}: Levels: Levels: 40.98 43.85925 46.50675 48.81675 50.67675 51.97425 52.76175 53.57175
 	
-	\paragraph{Clairvoyance and Clairaudience: }Levels: 69.5638 73.90224 76.24079 77.70544 78.63809 79.195065 79.50884 79.80294
+	\paragraph{Analyze Magic}: Levels: 32.49 33.44975 34.33225 35.10225 35.72225 36.15475 36.41725 36.68725
+	
+		
+	\paragraph{Clairvoyance and Clairaudience: } Levels: 69.5638 73.90224 76.24079 77.70544 78.63809 79.195065 79.50884 79.80294
 	
 	These were made by using Logistic Regression to determine the percentage cost for increased range as it \textit{specifically} applied to the 10 yard range of Clairsentience. You get: 12.9228 * ln(0.220941 * yd range). Then, multiply yd range by x5 to get steps of +5 yards and you'll have the enhancement value at each level.
 	
@@ -225,10 +228,18 @@
 	
 	Since Force 1 is Reduced Range x1/2, you can see it mostly match increased range's costs, so 10\% at Force 2 (10 yards), 19\% (20\%) at Force 4, (20 yards), 31\% (30\%) at Force 10 (50 yards).
 	
+	\paragraph{Combat Sense}: Levels: 42.99 43.94975 44.83225 45.60225 46.22225 46.65475 46.91725 47.18725
+	This marks a departure in a subtle different design. Analyze and Detect Spells want Reliable on the Detect Advatage. Some of these later spells want it on the Affliction!
+	
+	\paragraph{Detect Enemies}: Levels: 32.2425 32.722375 33.163625 33.548625 33.858625 34.074875 34.206125 34.341125
+	
+	\paragraph{Detect Enemies, Extended}: Levels: 33.5425 34.022375 34.463625 34.848625 35.158625 35.374875 35.506125 35.641125
+	
+	\paragraph{Detect Individual}:
 	
 	\textbf{Health Spells:\\}
 	
-	\paragraph{Heal}: Levels: 42.6 47.1 51.6 56.1 60.6 65.1 68.1 71.1
+	\paragraph{Heal}: Levels: 44.955 50.7135 56.0085 60.6285 64.3485 66.9435 68.5185 70.1385
 	
 	This is unfortunately my worst creation here. There's not much to say in the Heal does not like using HP to heal HP, perhaps with good reason. Much of it is good, but there are two parts that are basically just BS Made up:
 	
