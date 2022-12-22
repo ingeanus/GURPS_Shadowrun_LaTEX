@@ -72,8 +72,10 @@
 
 	\paragraph{Analyze}
 	\begin{center}
-		\textit{Power: \hyperref[editor]{Editor lvl 1} and }
+		\textit{Power: \hyperref[editor]{Editor lvl 1} and \hyperref[portscan]{Portscan}}
 	\end{center}
+
+	For Analyzing Files or Computers, the Editor program at level 1 can suffice. For Analyzing Networks, the Emerged instead needs the Portscan power.
 
 	\paragraph{Breach}
 	\begin{center}
@@ -126,16 +128,15 @@
 	
 	\paragraph{Search}
 	\begin{center}
-		\textit{Power: \hyperref[editor]{Editor lvl 1} and}
+		\textit{Power: \hyperref[editor]{Editor lvl 1} and \hyperref[portscan]{Portscan}}
 	\end{center}
 
-	\hyperref[editor]{Editor}'s first level allows the Emerged to search and probe through data systems and files, which can also be used at a lower power as the Search program for the purposes of searching any single software icon, such as a file, database, or so on. For searching networks, the Emerged needs the TODO Power.
+	\hyperref[editor]{Editor}'s first level allows the Emerged to search and probe through data systems and files, which can also be used at a lower power as the Search program for the purposes of searching any single software icon, such as a file, database, or so on. For searching networks, the Emerged needs the \hyperref[portscan]{Portscan} Power.
 	
 	\paragraph{Spoof}
 	\begin{center}
 		\textit{Power: \hyperref[puppeteer]{Puppeteer}}
 	\end{center}
-
 
 	Similarly to controlling the inputs and outputs of a device, Pupeteer can also be used as a normal Spoof program to do so for a software. This doesn't grant any capabilities to use the Pupeteer Complex Form outside its normal restrictions still (e.g. no Pupeteering ICE), although you can still often Pupeteer a device to perform a software action anyways.
 
@@ -270,8 +271,6 @@
 	\subsection{Complex Forms}
 	
 	TODO: Description
-	TODO: Add Extended Duration to many Affliction forms.
-	TODO: Network Search Power
 	
 	\subsubsection{Using Complex Forms}
 	
@@ -349,23 +348,35 @@
 			Resonance & Base Cost\\
 			\hline
 			\hline
-			Resonance 1 & 24 \\
-			Resonance 2 & 31 \\
-			Resonance 3 & 37 \\
-			Resonance 4 & 43 \\
-			Resonance 5 & 48 \\
-			Resonance 6 & 51 \\
-			Resonance 7 & 53 \\
-			Resonance 8 & 55 \\
+			Resonance 1 & 33 \\
+			Resonance 2 & 40 \\
+			Resonance 3 & 46 \\
+			Resonance 4 & 52 \\
+			Resonance 5 & 57 \\
+			Resonance 6 & 60 \\
+			Resonance 7 & 62 \\
+			Resonance 8 & 64 \\
 			\hline
 		\end{tabular}
 	\end{center}
 	
-	\textcolor{OliveGreen}{\textit{Statistics: Affliction (Jam Radio, +37\%; Malediction 1, +100\% No Signature, +20\%; Accessibility, Only on the Matrix, -40\%; Complex Form, -5\%; Requires (Threading) Roll, -15\%\footnote{Difference between Requires Will and Requires (10) Roll}) [19.7] and then Jam Radio is Obscure, Radio (Extended, all Radio comms, +40\%; Stealthy, +100\%; Complex Form, -5\%; No Area of Effect, -50\%) [3.7] further Levels increase Jam Radio's levels.}}
+	\textcolor{OliveGreen}{\textit{Statistics: Affliction (Jam Radio, +37\%; Extended Duration, x500, +110\%\footnote{Long enough to last 24 hours, so we'll count it as sustained.}; Malediction 1, +100\%; No Signature, +20\%; Accessibility, Only on the Matrix, -40\%; Complex Form, -5\%; Fixed Duration, +0\%; Requires (Threading) Roll, -15\%\footnote{Difference between Requires Will and Requires (10) Roll}; Terminal Condition, Losing Concentration, -20\%\footnote{See Magic/Spells section for external references.}) [19.7] and then Jam Radio is Obscure, Radio (Extended, all Radio comms, +40\%; Stealthy, +100\%; Complex Form, -5\%; No Area of Effect, -50\%) [3.7] further Levels increase Jam Radio's levels.}}
 	
-	\subsubsection*{Puppeteer}\label{puppeteer}
+	\subsubsection*{Portscan}\label{portscan}
 	
-	The Technomancer interfaces themselves with a system using the resonance, making it follow his commands.
+	The Emerged is able to detect and analyze the general layout of hosts through their Foundation's connection to the Matrix.
+	
+	To do so, they must first Concentrate for 1 second and test Threading + Resonance; success allows them to scan networks they are connected to for 1 minute, while success by 5 or more greatly improves their analyzing capabilities as detailed below.
+	
+	Scanning a network requires a constant Concentration and a Quick Contest of Perception-based Computer Operation + Resonance versus Will (Usually Complexity$\times$2); winning lets the Emerged "peek" into the network and access publicly available information. 
+	
+	This immediately lets the know of the most significant computer on the network (Usually the highest complexity computer) alongside the general number of computers. The Emerged can analyze these results with an IQ-Based Computer Operation + Resonance; success gives the Emerged any basic information that the computer would normally "announce" to others on the network, with high Margins of Success providing better and more data, such as: Public IP Address, MAC Address, type and make, open ports (within reason), etc. Often, this is enough to warrant bonuses to any hacking or interacting with the computer as if the Emerged had succeeded on a Research roll for that particular computer (Often a +1). 
+	
+	Critical Success gives even more information - such that can be considered public, but not readily available to any computer - such as user account names and privelages, existence and destination of traffic not directed to them, encryption standards, software and hardware versions, existence of hidden or spread-spectrum traffic, restricted ports, subnetworks, etc. This often counts as a Critical Success on a Research Roll (Which often gives a +2).
+	
+	If the Emerged succeeded by 5 or more on their Threading Roll, the "announced" data is given to them automatically, with a normal Success providing the Critical Success information. Should they have a Critical Success in such an instance, the information can be anything that is hidden, but not always protected, such as some session tokens, contents of unencrypted network traffic (Not uncommon on internal networks!), hidden subnetworks, hidden accounts, etc. This can often gain them access to very mundane or insecure computers or their traffic immediately!
+	
+	Higher Levels improve the power's capabilities; add +1 to all Rolls for each Level above 1.
 	
 	\begin{center}
 		\begin{tabular}{|c|c|}
@@ -373,14 +384,54 @@
 			Resonance & Base Cost\\
 			\hline
 			\hline
-			Resonance 1 & 23 \\
-			Resonance 2 & 28 \\
-			Resonance 3 & 32 \\
-			Resonance 4 & 36 \\
-			Resonance 5 & 39 \\
-			Resonance 6 & 41 \\
-			Resonance 7 & 43 \\
-			Resonance 8 & 44 \\
+			Resonance 1 & 16  \\
+			Resonance 2 & 18 \\
+			Resonance 3 & 20 \\
+			Resonance 4 & 22 \\
+			Resonance 5 & 23 \\
+			Resonance 6 & 24 \\
+			Resonance 7 & 24 \\
+			Resonance 8 & 25 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\textcolor{OliveGreen}{\textit{Statistics: Detect, Computer and Networks (Common; Analyzing (Magin-Based 5, -50\%), +50\%; Accessibility, On Matrix Only, -40\%; Resistable vs Will, -15\%; Complex Form, -5\%; Requires (Threading) Roll, -20\%; Requires (Computer Operation) Skill, +5\%; Signal Detection, +0\%) [23]}}
+	
+	\subsubsection*{Puppeteer}\label{puppeteer}
+	
+	The Technomancer interfaces themselves with a system using the resonance, making it follow his commands while entirely bypassing its normal protections!
+	
+	To do so, they must Concentrate for 1 second and roll a Quick Contest of Threading + Resonance versus Will (Usually Complexity$\times$2); winning provides the Emerged with a vanishingly short period of control over the device - with no further mental maintenance required.
+	
+	The duration depends on the Level of the Complex Form, lasting for Margin of Victory multiplied by the corresponding value in the table below (e.g. MoV 4 on a Level 5 Complex Form lasts for 12 seconds).
+	
+	Control of the device allows the Emerged to issue mental commands to it over the Matrix as if they were its administrator. Often the duration does not allow for many tasks without rushing (See Time Spent B346) and should be strictly tracked by the GM - it's entirely possible to shutdown a Camera in a couple seconds (or less with a Computer Operation roll), but adding a new administrator to a computer takes a small handful of minutes! A good heuristic for non-techie GMs is: 1-10 seconds for trivial/fleeting tasks that are regularly used (Moving a camera, shutting down a system, turn off a wireless or wired connection), 11-60 seconds for somewhat lasting changes that are more complex and irregular (Executing or stopping a specific program), 61-300 seconds for fairly complex tasks (Creating a new user account, changing firewall rules, etc), 300+ for long \textit{and} complex tasks (Finding and mailing a file somewhere else, finding changing permissions on a specific file, removing all other user accounts, etc).
+	
+	If any of these options go against the design principles, security principles, etc. for the device, at the moment of truth the Emerged must roll another Quick Contest; winning this allows the action to go through, while failure breaks their control.
+	
+	Any changes made will remain until altered by someone else (Or through an automated security procedure).
+	
+	The GM should be wary about attempts to replicate or bypass other abilities; Puppeteer is definitely capable of this to a degree (e.g. commanding a computer to email you a file), but it does not provide any special ability to do so by itself, nor in a timely manner! Additionally, if a device starts acting up, someone with physical access is perfectly capable of resetting it no matter what access the Emerged has. 
+	
+	As well, it's important to keep in mind that many of these more powerful options requires \textit{multiple steps}, such as emailing a file requiring you to find the file, disable security that would alarm the Spyder of changes to restricted devices/files, remove the Spyder's control of the device,  change the firewall settings to allow emailing files, change the file's settings to allow copying/emailing out, then create/create a user account to mail it - all of which assumes these actions are even possible for the computer! 
+	
+	If the GM allows this as a one-stop solution where the computer performs all the actions itself, this Complex Form is inordinately powerful - so make sure to require them to perform the requisite actions for each step, which require their respective rolls and proper amounts of time! If this is not in the GM's style or is too complicated, feel free to add Cosmic (Computers handle actions instantly themselves) for +25 points to the Complex Form and ignore this.
+	
+	\begin{center}
+		\begin{tabular}{|c|c|}
+			\hline
+			Resonance & Base Cost\\
+			\hline
+			\hline
+			Resonance 1 & 28 \\
+			Resonance 2 & 33 \\
+			Resonance 3 & 37 \\
+			Resonance 4 & 41 \\
+			Resonance 5 & 44 \\
+			Resonance 6 & 46 \\
+			Resonance 7 & 48 \\
+			Resonance 8 & 49 \\
 			\hline
 		\end{tabular}
 	\end{center}
@@ -411,7 +462,7 @@
 		\end{tabular}
 	\end{center}
 
-	\textcolor{OliveGreen}{\textit{Statistics: Mind Control (Independent, +70\%; Cybernetic Only, -50\%; Complex Form, -5\%; Reduced Duration, \(\times\)1/60, -35\%; Requires (Threading) Roll, -20\%); Sense-Based, Reversed, Matrix, -20\%) [20] further levels add Reliable, +5\% on even levels and reduce the Reduced Duration on odd levels. }}
+	\textcolor{OliveGreen}{\textit{Statistics: Mind Control (Independent, +70\%; Accessibility, On Matrix Only, -20\%\footnote{This Accessibility is lower than othersbecause Cybernetic Only includes much of its utility already.}; Cybernetic Only, -50\%; Complex Form, -5\%; Reduced Duration, \(\times\)1/60, -35\%; Requires (Threading) Roll, -10\%\footnote{Difference between Requires (IQ) Roll and Requires (10) Roll}) [20] further levels add Reliable, +5\% on even levels and reduce the Reduced Duration on odd levels. }}
 	
 	\subsubsection*{Resonance Spike}\label{resonance_spike}
 	
