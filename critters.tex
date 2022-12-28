@@ -123,6 +123,33 @@
 	
 	\textcolor{OliveGreen}{\textit{Statistics: Obscure, Vision (Defensive, +50\%; Extended, Ultra, Infra, \& LADAR, +60\%; Selective Area, +20\%; Stealthy, +100\%; Magical, -10\%; Terminal Condition, Being spotted, -20\%) [6 per level] further levels add Area of Effect, +50\% [1 per level]}}
 	
+	\label{concealment_self_only}
+	An alternative version of Concealment only affects the user and whatever they are carrying.
+	
+	\begin{center}
+		\begin{adjustwidth}{-2mm}{}
+			\scalebox{0.95}{
+				\begin{tabular}{|c|c|c|}
+					\hline
+					Magic & Penalty & Points\\
+					\hline
+					\hline
+					Magic 1-2 & -2 & 11 \\
+					Magic 3-4 & -3 & 17 \\
+					Magic 5-6 & -4 & 22 \\
+					Magic 7-8 & -5 & 28 \\
+					Magic 9-10 & -6 & 33 \\
+					Magic 11-12 & -7 & 39 \\
+					Magic 13-14 & -8 & 44 \\
+					Magic 15+ & -9 & 50 \\
+					\hline
+				\end{tabular}
+			}
+		\end{adjustwidth}
+	\end{center}
+	
+	\textcolor{OliveGreen}{\textit{Statistics: Obscure, Vision (Defensive, +50\%; Extended, Ultra, Infra, \& LADAR, +60\%; Selective Area, +20\%; Stealthy, +100\%; 1 yard AOE, -25\%; Magical, -10\%; Terminal Condition, Being spotted, -20\%) [5.5 per level]}}
+	
 	\subsubsection{Confusion}\label{confusion}
 	\begin{flushright}
 		42/56/70/84/98 Points
@@ -466,11 +493,15 @@
 	
 	GM can lower or raise traits on metavariants, in order to make them more equal overall, but this is not required a recommended that much.
 	
+	See GURPS Zombies Rules for Splatter
+	
 	\subsubsection{Infected Quality Rulings}
+	
+	Many of the qualities and drawbacks of Infected require some baseline explanations on how they should work, which this section covers.
 	
 	\subsubsection*{Weakness to Sunlight}
 	
-	Most infected have severe allergic reactions to the UVR present in sunlight, most notably the UVA radiation. In normal intensities (approx. $1,360\;W/m^2$ for all sunlight, or around 5\% of that for UVR), this is enough to cause immediate life-threatening reactions, dealing 1d unresistable or regenerable damage every minute (although natural and magical healing still works), which can easily cause incapacitation and death in under 5 minutes.
+	Most infected have severe allergic reactions to the UVR present in sunlight, most notably the UVA radiation. In normal intensities (approx. $1,360\;W/m^2$ for all sunlight, or around 5\% of that for UVR), this is enough to cause immediate life-threatening reactions, most commonly dealing 1d unresistable or regenerable damage every minute (although natural and magical healing still works), which can easily cause incapacitation and death in under 5 minutes. Some types of infected are somewhat better off (or sometimes worse) - the results of this diatribe should be adjusted proportionately to them (e.g. a Goblin under an umbrella taking 20\% intensity, takes 1d-2 per 30 minutes instead of per minute).
 	
 	UV light can be quite deceptive about it capabilities, leading to unintentional injury or death for many new infected:
 	
@@ -499,6 +530,8 @@
 	All forms of reduction apply to artificial lights as they do normal sunlight.
 	
 	When in the presence of strong UV light, Infected are often unable to use any defensive or regenerative abilities, which has lead to the incorporation of many cheap UV lights installed as security features - especially in areas that have to deal with permanent infected populations. Usually any source around 1\% strength of the sun (1 per half hour) can prevent such power use given a failed HT check, while damage of 1 per 10 minutes or over prevent it with no HT check allowed.
+	
+	By RAW, infected take their Weakness/Allergy damage immediately upon contact with a substance (Modified for intensity as normal), waiting for its period to elapse again before taking more damage. While this is balanced against cases where individuals would try to only be exposed for small portions of time (e.g. dashing between lightbeams or something), it can feel unrealistic to have your blackout curtains slip a tiny bit and hit you with immediate 1d damage. The GM can feel free to spread the damage out over the entire period, perhaps only in certain cases, which amounts to a +0\% feature.
 	
 	As a parting shot, tanning beds are positivelye lethal, seeing as they're designed not just to light up an area with UV light, but put out enough to quickly tan an individual. They can put out even 10-15 times as much UVA, which gives a toasty 1 damage per 2 seconds up to 1d-2 per 2 seconds.
 	
@@ -575,6 +608,39 @@
 	
 	Regeneration Slow/Regular/Fast/Very Fast (Magical, -10\%) [9/23/45/90]
 		
+	\subsubsection{Jabberwock}
+	\begin{flushright}
+		175 Points
+	\end{flushright}
+	
+	\textbf{Attributes:}
+	ST +2 (SM +1, -10\%) [13]; HT +1 [15]; HP +3 (SM +1, -10\%) [6]; Will +1 [7]; FP +1 [4]; Basic Speed +0.75 [15]
+	
+	\textbf{Advantages:}
+	\hyperref[concealment_self_only]{Concealment (Self Only) [11 at Magic 1]}; \hyperref[dual_natured]{Dual-Natured} [25]; \hyperref[essence_drain]{Essence Drain} [123]; Reduced Consumption 3 [6]; Sharp Teeth [1]; Spark [1]; Unaging [15]
+	
+	\textbf{Disadvantages:}	
+	\hyperref[essence_loss]{Essence Loss} [-10]; Infectious Attack [-5]; Restricted Diet (Sasquatch Blood (Occasional); Subsitution, -50\%) [-15]; Social Stigma, Monster [-15]; Susceptible, Alcohol 3 (Occasional) [-3]; Weakness, 1d per 30 minutes (UV Spectrum of Sunlight, Very Common, $\times$3; Variable, -40\%) [-9]; Vulnerability, Plastics $\times$2 (Rare\footnote{While plastics are way more common than other Vulnerability types, they're less common in terms of weapons!}) [-10]
+	
+	\textit{\\Optional Qualities at Infection:}
+	
+	Adept/Magician/Aspected Magician/Mystic Adept [2/5/5*/6]
+	
+	\textit{\\Optional Powers:}
+	
+	
+	Discriminatory Hearing [15]
+	
+	Discriminatory Smell [15], optionally with Emotion Sense, +50\%
+	
+	\hyperref[fear]{Fear [42 at Magic 1]}
+	
+	Regeneration Slow/Regular/Fast/Very Fast (Magical, -10\%) [9/23/45/90]
+		
+	\subsubsection{Lamia}
+	
+	\subsubsection{Nibinaabe}
+	
 	\subsubsection{Vampire}
 	\begin{flushright}
 		146 Points
