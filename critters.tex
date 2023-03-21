@@ -67,6 +67,23 @@
 	
 	\textcolor{OliveGreen}{\textit{Statistics: Mind Control (Area of Effect, 2 yards, +50\%; Long Range, +50\%; Accessibility, Only commands that are natural to the animal, -30\%\footnote{Priced on the fact that making animals perform any number of more complex tasks could be very useful, but you are limited to semi-natural behaviour}; Accessibility, Non Sapient Animal, -50\%\footnote{Priced on the fact that you'll most see tons more humans, which are also more valuable targets. Same with many critters.}; Suggestion, -40\%; Terminal Condition, Out of sight, -20\%; Magical, -10\%) [25] further levels increase Area of Effect's level [25]}}
 	
+	Many critters have this power limited to specific classes of animals; the GM should increase the \textit{Accessibility, Non Sapient Animal, -50\%} limitation as they deem necessary, however here are some examples:
+	
+	
+	\begin{center}
+		\begin{adjustwidth}{-4mm}{}
+		\scalebox{0.90}{
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Limitation & Percentage & Cost\\
+			\hline
+			Subterranean Creatures & -65\% & 18/43/68 \\
+			\hline
+		\end{tabular}
+		}
+		\end{adjustwidth}
+	\end{center}
+	
 	
 	\subsubsection{Binding}\label{binding}
 	\begin{flushright}
@@ -471,6 +488,40 @@
 	
 	\textcolor{OliveGreen}{\textit{Statistics: Affliction (\hyperref[cp_ct]{Direct Power, +245\%}; Slower Move, Margin-Based, +30\%; Accessibility, Things predisposed to motion, -20\%; Environmental, -20\%; Hard-To Use 2 (Accessibility, Technology Only, -20\%), -8\%; Magical, -10\%) [32] with Alternative Abilities [7]}}
 	
+	\subsubsection{Paralyzing Howl}\label{paralyzing_howl}
+	\begin{flushright}
+		48/53/56/58/60/61/62 Points
+	\end{flushright}
+
+	The critter can unleash a magical sound - often a howl or scream - that induces paralysis in all individuals nearby who can hear it. The critter must roll a Quick Contest of Will + Magic versus the Wills of targets inside the area; the GM may opt to have the highest Will resistance roll for everybody to speed things up. Success induces paralysis in the targets for 30 seconds per Margin of Victory. This power only works on living creatures who can hear the sound - drones, vehicles, and so on are unaffected. 
+	
+	\begin{center}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Magic & Radius & Point Cost\\
+			\hline
+			\hline
+			Magic 1-2 & 16 & 48 \\
+			Magic 3-4 & 32 & 53 \\
+			Magic 7-8 & 48 & 56 \\
+			Magic 9-10 & 64 & 58 \\
+			Magic 11-12 & 80 & 60 \\
+			Magic 13-14 & 96 & 61 \\
+			Magic 15+ & 112 & 62 \\
+			\hline
+		\end{tabular}
+	\end{center}
+
+	\textcolor{OliveGreen}{\textit{Statistics: Affliction (Paralysis, +150\%; Area of Effect, 16 yards, +200\%; Based on Will, +20\%; Malediction, +100\%; Accessibility, Living beings only, -20\%; Emanation, -20\%; Magical, -10\%; Reduced Duration, $\times$1/2, -10\%; Sense-Based, Hearing, -20\%; Substantial Only, -10\%) [48] with further levels providing +16 yards of linear AOE (See the Spells section on this interpolation) }}
+
+	\subsubsection{Paralyzing Touch}\label{paralyzing_touch}
+	\begin{flushright}
+		29 Points 
+	\end{flushright}
+
+	The critter has the ability to paralyze beings with a simple touch. Doing so requires contact with the target's aura (armour provides no defense), after which the critter make a Quick Contest of Will + Magic versus the target's Will. Success induces paralysis (B429) in the target for 30 seconds per Margin of Victory. This power only works on living creatures - drones, vehicles, and so on are unaffected.
+	
+	\textcolor{OliveGreen}{\textit{Statistics: Affliction (Paralysis, +150\%; Based on Will, +20\% Malediction, +100\%; Accessibility, Living beings only, -20\%; Melee Attack, C, -30\%; Magical, -10\%; Reduced Duration, $\times$1/2, -10\%; Substantial Only, -10\%) [29] }}
 	
 	\subsubsection{Photorefraction}\label{photorefraction}
 	\begin{flushright}
@@ -589,10 +640,10 @@
 			\hline
 			HMHVV Type II & \\
 			\hline
-			\hyperref[bandersnatch]{Bandersnatch} & \\
-			\hyperref[formoraig]{Fomóraig} & \\
-			\hyperref[gnawer]{Gnawer} & \\
-			\hyperref[grendel]{Grendel} & \\
+			\hyperref[bandersnatch]{Bandersnatch} & 20 \\
+			\hyperref[formoraig]{Fomóraig} & 45 \\
+			\hyperref[gnawer]{Gnawer} & 70 \\
+			\hyperref[grendel]{Grendel} & 155 \\
 			\hyperref[harvester]{Harvester} & \\
 			\hyperref[loup-garou]{Loup-Garou} & \\
 			\hline
@@ -677,7 +728,7 @@
 	
 	\hyperref[fear]{Fear [42 at Magic 1]}
 	
-	\hyperref[paralyzing_howl]{Paralyzing Howl []}
+	\hyperref[paralyzing_howl]{Paralyzing Howl [48 Points at Magic 1]}
 	
 	Resistant, Disease +3/+8 [3/5]
 	
@@ -1011,18 +1062,14 @@
 	
 	\subsubsection{Gnawer}\label{gnawer}
 	\begin{flushright}
-		X Points
+		73 Points
 	\end{flushright}
 
-	\textbf{Attributes:}
-	BODY AGI REA STR WIL LOG INT CHA
-	3/9	1/6	1/7	3/10 2/8 1/5 1/8 1/5
-	3/8	1/6	1/5	3/8	2/7	1/6	1/6	1/6
-	
-	ST +4 [28]; IQ-1 [-30]; HT +1 [15]; HP -1 [-2]; Per +2 [10]; Will +1 [7]; Basic Speed +0.75 [15]
+	\textbf{Attributes:}	
+	ST +4 [28]; IQ-1 [-15]; HT +1 [15]; HP +1 [2]; Per +2 [10]; Will +1 [7]; Basic Speed +0.75 [15]
 	
 	\textbf{Advantages:}
-	Damage Resistance 2 (Tough Skin, -40\%) [6]; \hyperref[dual_natured]{Dual-Natured} [25]; Resistant (Pathogens and Toxing)$\rightarrow$Resistant, Immune (Toxins)  and Resistant, +3 (Pathogens) [10]; Sharp Teeth [1]; Spark [1]
+	Damage Resistance 2 (Tough Skin, -40\%) [6]; \hyperref[dual_natured]{Dual-Natured} [25]; Resistant (Pathogens and Toxing)$\rightarrow$Resistant, Immune (Toxins)  and Resistant, +3 (Pathogens) [10]; Reduced Consumption 3 [6]; Sharp Teeth [1]; Spark [1]
 	
 	\textbf{Disadvantages:}
 	Appearance (Unattractive)\footnote{Alternatively, lower the Gnawer's Appearance by one level} [-4]; Restricted Diet (Metahuman Bones; Subsitution, -50\%) [-10]; Social Stigma, Monster [-15]; Weakness, 1d per 30 minutes (UV Spectrum of Sunlight, Very Common, $\times$3; Variable, -40\%) [-9]
@@ -1032,8 +1079,20 @@
 	Damage Resistance X (Tough Skin, -40\%) [3 per level] (Max level equal to Magic)
 	
 	\subsubsection{Grendel}\label{grendel}
+	\begin{flushright}
+		155 Points
+	\end{flushright}
+	
+	ST +5 (SM+1, -10\%\footnote{Includes limitation on original Orc ST as well.}) [30]; IQ -1 [-15]; HT +2 [30]; Per +1 [5]; Will +1 [7]; Basic Speed +0.25 [5]
+	
+	\textbf{Advantages:}
+	\hyperref[animal_control]{Animal Control (Subterranean Creatures)} [18 at Magic 0]; \hyperref[concealment_self_only]{Concealment (Self Only)} [11 at Magic 0]; \hyperref[dual_natured]{Dual=Natured} [25]; Discriminatory Smell [15]; Infravision [10]; \hyperref[paralyzing_touch]{Paralyzing Touch} [29 Points at Magic 0]; Reduced Consumption 3 [6]; Sharp Claws [5]; Sharp Teeth [1]; Spark [1]
+	
+	\textbf{Disadvantages:}
+	Appearance (Unattractive$\rightarrow$Ugly)\footnote{Alternatively, lower the Grendel's Appearance by one level} [-4]; Restricted Diet (Metahuman Flesh; Substitution, -50\%) [-15]; Weakness, 1d per 30 minutes (UV Spectrum of Sunlight, Very Common, $\times$3; Variable, -40\%) [-9]	
 	
 	\subsubsection{Harvester}\label{harvester}
+	BODY AGI REA STR WIL LOG INT CHA
 	die
 	
 	\subsubsection{Loup-Garou}\label{loup-garou}
