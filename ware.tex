@@ -115,21 +115,56 @@
 	
 	Any part of a character's body that can be damage, need to take the Cyberware Meta-Trait. This is a collection of advantages that, in total, represent the features of chrome flesh.
 	
-	When taking the Meta-Trait, it must be limited to whatever parts of the body that are cybered up. This must use \textcolor{Blue}{\href{http://forums.sjgames.com/showpost.php?p=623207&postcount=1}{Kromm's Post on Partial DR for Hit Location}}. Here are some pre-made limitations for ease-of-use:
+	When taking the Meta-Trait, it must be limited to whatever parts of the body that are cybered up. GMS are advised to not use the \textit{Partial} modifier for damage resistance, due to its incapability to allow multiple differing hit locations; \textcolor{Blue}{\href{http://forums.sjgames.com/showpost.php?p=623207&postcount=1}{Kromm's Post on Partial DR for Hit Location}} is better, but also troublesome for having a very high minimum and low maximum that distort the values.
 	
-	\begin{itemize}
-		\itemsep0em 
-		\item Skull: -40\%
-		\item Face: -40\%
-		\item Eyes: -45\%
-		\item Ears: -45\%
-		\item One Limb: -35\%
-		\item Two Limbs: -30\%
-		\item Three Limbs: -25\%
-		\item Four Limbs: -20\%
-		\item Torso: -25\%
-		\item Torso and Four Limbs: -5\%
-	\end{itemize}
+	Instead, I devised rules to allow the \textit{Partial} limitation to apply for multiple hit locations, which you can find in the \hyperref[partial]{Behind the Scenes section here.} While a table is provided below for ease of use, if you need to calculate some unique locations, check out that section for instructions on how to do so. Keep in mind that these are numerically generated, and while some are adjusted to keep things fair, the differences between two options might be so small that there's little difference (e.g. Both Hands versus Hands \& Feet); the GM should decide whether to allow certain limitations at each value in order to prevent players from just throwing on anything and everything they can. \textcolor{Blue}{\href{https://drive.google.com/file/d/0B9vo3aBTs2W7UExsUEZGNjdJejg/view?resourcekey=0-pGjkVxQLp-67-iHB73z1dQ}{Check out Bruno's Grand Unified Hit Locations.}}
+	
+	\textcolor{OliveGreen}{\textit{Example: John is making a punk Character with two Cyberarms and Torso. He takes the Cyberware Meta-Trait with the \textit{Torso \& Two Limbs, -5\%} limitation applied to it. If he wanted something more complex, such as a cybered up Jaw, Torso, Forearms, and Hands, he would have to calculate the value for that himself as instructed in the Behind the Scenes section.}}
+	
+	\begin{center}
+		\begin{tabularx}{0.32\textwidth}{|X|c|}
+			\hline
+			Locations & Limitation \\
+			\hline
+			\hline 
+			Skull	& -70\%	\\
+			Face 	& -50\%	\\	
+			Eyes 	& -90\%	\\
+			Ears 	& -70\%	\\
+			Jaw		& -60\% \\
+			Right Arm & -40\% \\
+			Right Leg & -40\% \\
+			Left Arm & -40\% \\
+			Left Leg & -40\% \\
+			Both Arms & -20\% \\
+			Both Legs & -20\% \\
+			Torso & -10\% \\
+			Vitals & -30\% \\
+			Neck & -50\% \\
+			Hand/Foot & -80\% \\
+			Two Hands/Feet & -40\% \\
+			\hline
+			Chest & -20\% \\
+			Abdomen & -30\% \\
+			Forearms & -35\% \\
+			Shins & -30\% \\ 
+			\hline
+			Head (Skull \& Face) & -45\% \\
+			Three Limbs & -15\% \\
+			All Limbs & -10\% \\
+			Skull \& Torso & -5\%\footnote{Should be -15\%, but priced to keep fair.} \\
+			Face \& Torso & -5\%\footnote{Should be -15\%, but priced to keep fair.}  \\
+			Head \& Torso & -5\%\footnote{Should be -10\%, but priced to keep fair.} \\
+			Hands \& Feet & -40\% \\
+			Torso \& One Limb & -10\% \\
+			Torso \& Two Limbs & -5\% \\
+			Torso \& Three Limbs & -0\% \\
+			Torso \& All Limbs & -0\% \\
+			\hline
+		\end{tabularx}
+	\end{center}
+	
+	
 	
 	\subsubsection*{Cyberware Meta-Trait}
 	\begin{flushright}
@@ -472,7 +507,7 @@
 	
 	\subsubsection{Cyberlimbs}
 	
-	Be sure to look at the Cyberlimb section above. None of these traits can be combined together.
+	Be sure to look at the Cyberlimb section above. None of these traits can be combined together. See the \hyperref[ware]{Ware \& Essence} section on negative point totals.
 	
 	\begin{center}
 		\begin{tabularx}{0.32\textwidth}{|X|c|c|}
@@ -493,7 +528,7 @@
 		-3 points
 	\end{flushright}
 	
-	
+	You have had one arm replaced with a cybernetic version. It's just as capable as a normal arm, with a bit of extra hardness to boot.
 	
 	\textit{\textcolor{OliveGreen}{Statistics: One Arm [-20] and NOT One Arm (Technological, -35\%) [13], Damage Resistance 1 (One Limb, -35\%) [4]}}
 	

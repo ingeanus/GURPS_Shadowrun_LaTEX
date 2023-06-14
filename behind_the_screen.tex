@@ -446,6 +446,90 @@
 	
 	\subsection{'Ware}
 	
+	Here's the old text on the meta-trait limitations. I don't really like how squished they are. PCs can't reaallly plan around this so I don't think it's great as an accessibility.
+	
+	When taking the Meta-Trait, it must be limited to whatever parts of the body that are cybered up. This must use \textcolor{Blue}{\href{http://forums.sjgames.com/showpost.php?p=623207&postcount=1}{Kromm's Post on Partial DR for Hit Location}}. Here are some pre-made limitations for ease-of-use:
+	
+	\begin{itemize}
+		\itemsep0em 
+		\item Skull: -40\%
+		\item Face: -40\%
+		\item Eyes: -45\%
+		\item Ears: -45\%
+		\item One Limb: -35\%
+		\item Two Limbs: -30\%
+		\item Three Limbs: -25\%
+		\item Four Limbs: -20\%
+		\item Torso: -25\%
+		\item Torso and Four Limbs: -5\%
+	\end{itemize}
+	
+	\label{partial}
+	
+	I instead went with some good old \href{https://www.wolframalpha.com/input?i=logarithmic+regression&assumption=%7B%22C%22%2C+%22logarithmic+regression%22%7D+-%3E+%7B%22Calculator%22%7D&assumption=%7B%22F%22%2C+%22LogFitCalculator%22%2C+%22data2%22%7D+-%3E%22%7B%7B0.463%2C9%7D%2C%7B1.85%2C7%7D%2C%7B2.78%2C5%7D%2C%7B11.57%2C4%7D%2C%7B9.72%2C4%7D%2C%7B11.57%2C4%7D%2C%7B16.66%2C4%7D%2C%7B36.57%2C1%7D%2C%7B21.29%2C2%7D%2C%7B28.23%2C2%7D%7D%22}{logarithmic regression.} This simply does regression to find the hit location penalty given a random hit location chance, e.g. Give it 1.85\% for skull and get around 7 in penalties out.
+	
+	The following formula takes in the percentage of body covered and outputs a limitation value based off the partial rules.
+	16.8243 log(0.0102412 x)
+	
+	Hit locations are presented below. Sublocations (e.g. Jaw/Nose/Ears/Cheek/Eyes) add up to the total for their main location (e.g. Face). As such, to use this, first add up the percentage for all locations you want covered, then plug it in as the value of \textit{x} in the formula above, and it will spit out the limitation value. Round down to the nearest 5\% for simplicity (lol). Use any values for Partial over this! Any negative values round up to 0. Values for left/right arms and legs were averaged before processing.
+	
+	Example: You're making some weirdo with a cybered up Jaw, Skull, Right Forearm, and Torso (Chest only) but nothing else. Add up 0.463 + 4.86 + 1.85 + 24.07 = 31.243. Plug this in like: 16.8243 log(0.0102412 * 31.243) = -19.172\%, which rounds to a -20\% limitation. Tadja!
+	
+	\begin{verbatim}
+	Location |	% Coverage
+	Skull		1.85 Total
+	Face		2.78 Total
+	> Jaw		0.463
+	> Nose		0.463
+	> Ears		0.463
+	> Cheek		0.927
+	> Eyes		0.463
+	Right Leg	11.57 Total (Avg for legs 14.115)
+	> Shins		5.785
+	> Knees		1.9283
+	> Thighs		1.9283
+	> Thighs (Veins)	1.9283
+	Right Arm	9.72 Total (Avg for arms 10.645)
+	> Forearm		4.86
+	> Elbows		1.62
+	> Upper Arms	1.62
+	> Shoulder(Veins) 1.62
+	Torso		24.07 Total
+	> Vitals		4.0117
+	> Chest		20.0583
+	Groin/Abdomen	12.5 Total
+	> Vitals		2.083
+	> Digestive Tract 6.25
+	> Pelvis		2.083
+	> Groin		2.083
+	Left Arm	11.57 Total
+	> Forearm		5.785
+	> Elbows		1.9283
+	> Upper Arms	1.9283
+	> Shoulder(Veins) 1.9283
+	Left Leg	16.66 Total
+	> Shins		8.33
+	> Knees		2.777
+	> Thighs		2.777
+	> Thighs (Veins)	2.777
+	Right Hand	2.315 Total
+	> Joint		0.38583
+	> Extremity	1.92917
+	Left Hand	2.315 Total
+	> Joint		0.38583
+	> Extremity	1.92917
+	Right Foot	1.39 Total
+	> Joint		0.2317
+	> Extremity	1.1583
+	Left Foot	1.39 Total
+	> Joint		0.2317
+	> Extremity	1.1583
+	Neck		1.85 Total
+	> Vein/Spine	0.3083
+	> Neck		1.5417
+	\end{verbatim}
+	
+	
 	\subsubsection{Control Rig}\label{bts_riggers}
 	
 	One of the defining components of the Control Rig is the fact that you take damage whenever your drones do. This is very similar the Ally disadvantage, however it also needs to have a second layer of resistability. Given that the most common AR does average 21 damage, alongside most drones that will get shot having 8 DR, I'm judging this as needing 13 MoS to ignore.
