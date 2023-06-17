@@ -19,7 +19,6 @@
 	top=10mm,
 }
 
-
 \usepackage{pgf}
 \usepackage{pgfpages}
 
@@ -40,6 +39,13 @@
 		resized height=1.0\pgfphysicalheight,%
 		center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
 	}%
+}
+
+\usepackage[skins,breakable]{tcolorbox}
+
+\newtcolorbox{breakbox}[2][]{%
+	blanker,
+	breakable,
 }
 
 \pgfpagesuselayout{boxed}
