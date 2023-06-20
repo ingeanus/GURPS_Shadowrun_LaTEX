@@ -11,6 +11,7 @@
 \usepackage{changepage}
 \usepackage{wrapfig}
 \usepackage[T1]{fontenc}
+\usepackage{mdframed}
 \usepackage{geometry}
 \geometry{
 	a4paper,
@@ -42,11 +43,13 @@
 }
 
 \usepackage[skins,breakable]{tcolorbox}
+\usepackage{paracol}
 
-\newtcolorbox{breakbox}[2][]{%
-	blanker,
+\newtcolorbox{breakbox}[1][]{%
 	breakable,
+	blanker
 }
+
 
 \pgfpagesuselayout{boxed}
 
