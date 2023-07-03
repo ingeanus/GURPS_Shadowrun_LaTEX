@@ -156,6 +156,14 @@
 	
 	\textit{\textcolor{OliveGreen}{Statistics: Jumper, Astral (Improved, +10\%; Reliable 6, +30\%; Immediate Preparation Required (1 minute), -30\%; Maximum Duration, (Magic) Hours, -5\%; Naked, -30\%; Nuisance Effect, Die after (Magic) additional hours, -5\%; Projection, Physical -25\%;  Limited Access (Astral Plane), -20\%; Magical, -10\%) [20]}}
 	
+	\paragraph{Counterspell}\label{counterspell}
+	\textit{Prerequisite: Spark, Magic 1+}
+	\begin{flushright}
+		
+	\end{flushright}
+	
+	
+
 	
 	\paragraph{Spell Defense}\label{spell_defense}
 	\textit{Prerequisite: Spark, Magic 1+}
@@ -3239,6 +3247,8 @@
 		9.5 Points per Force
 	\end{flushright}
 	
+	More powerful spirits are highly magical and increasingly hard to damage. This trait provides +1 DR when manifesting against physical attacks and increases the spirit's Magic.
+	
 	As a spirit's force increases, they have a number of traits that increase alongside it. This trait is automatically applied for higher force spirits and does not count towards any CP bonuses per Force.
 	
 	\textbf{Advantages:}
@@ -3403,7 +3413,7 @@
 	
 	Due to this nature, they are very often limited to outer spirits, such as Invae and Shedim.
 	
-	TODO: This. Include dependancy on out planes w/ some stopping while.. possessing probably.
+	TODO: This. Include dependency on out planes w/ some stopping while.. possessing probably.
 	
 	\subsubsection*{Bound Spirit}
 	\begin{flushright}
@@ -3412,21 +3422,25 @@
 	
 	\textbf{Disadvantages:} Sense of Duty (Summoner) [-5]
 	
+	
 	\subsection{List of Spirits}
 	
 	Here are a list of templates for known spirits. A conjurer does not necessarily have access to all of them, and when creating a character should get with their GM to determine which spirits are available to their tradition.
 	
-	Every Spirit has a Force rating when summoned. The base template represents \textit{Force 0}, and underneath are a list of improvements that can be added when summoning Force 1 and above, alongside limitations to those options for each type. Each increase of Force provides an amount of CP that is determined by the spirit Type, which can be chosen from the list, or any other trait that the GM approves; a portion of this section are dedicated to powers that a spirit gains by default at Force 1, instead of gaining the bonuses CP. \textit{These powers may have a higher cost when adding them to higher Force spirits and must be bought before spending any other CP.} These are marked with a + symbol. A minimum cost for all of the Force 1 powers is noted next to the header, for easy addition when creating a Force 1 Spirit.
+	Every Spirit has a Force rating when summoned. The base template represents \textit{Force 0}, and underneath are a list of improvements that can be added when summoning Force 1 and above (See Spirit Powers below), alongside limitations to those options for each type. Each increase of Force provides an amount of CP that is determined by the spirit Type, which can be chosen from the list, or any other trait that the GM approves; spirits gain a substantial amount of free points at Force 1 that can be spent on any of these improvements as normal, which include any normal CP bonuses for higher forces. Some powers are marked with a '+' sign, indicating that they have higher costs for Magic levels above 1.
 	
-	Some spirit types might have certain traits that are automatically improved at higher levels of Force, in which case they will be noted there. While the GM technically decides and is the final arbitrator on what traits a spirit is summoned with, it is recommended to allow the summoner to choose what they want, as long as it seems reasonable.
+	One important departure from Shadowrun is that spirits \textit{do not} come with a plethora of powers out of the gate. They must instead be purchased using either the starting points or using points for higher Forces.
+	
+	Some spirit types might have certain traits that are automatically improved at higher levels of Force if taken, in which case they will be noted there. While the GM technically decides and is the final arbitrator on what traits a spirit is summoned with, it is recommended to allow the summoner to choose what they want, as long as it seems reasonable.
 	
 	Additionally, all increases of Force automatically increase the level of the \hyperref[spirit_force]{Spirit Force trait} from above, which does not count against the spirit's CP for each Force.
 	
 	Some spirits are given multiple templates to choose from (Such as a Spirit of Water's liquid or frozen forms). These must be determined when summoning and should generally not change without GM discretion (i.e. a frozen Spirit of Water won't generally melt into a liquid form).
 	
+		
 	\subsubsection{Spirit of Fire}
 	\begin{flushright}
-		-134 -100 Points Force 0
+		-83 Points Force 0
 	\end{flushright}
 	
 	A Spirit of Fire takes, unsurprisingly, the form of something heavily related to fire. Most often, especially for tradition close to hermetics, this takes the form of some sort of fire elemental, force, etc. For shamanic ones, this could be a bit less elemental (Although many still are), taking the form of fire associated things or creatures, such as a Phoenix. In such a case, it is acceptable to switch \textit{Elemental [7]} with \textit{Bodily [5/0]}, and take either +1 HP/+1 ST respectively.
@@ -3438,10 +3452,10 @@
 	Unlike many spirits, they do require oxygen to materialize well, losing FP as per suffocation otherwise. As well, their form is more draining in the presence of water (or any general fire-retardant chemical), causing 1d HP damage per minute of exposure.
 	
 	\textbf{Attributes:}
-	ST 5 [-30]; DX 7 [-60]; IQ 6 [-52]; HT 7 [-39]; HP 5 [0]; Basic Speed 4.25 [15]; Basic Move 3 [0]; Per 7 [-15]; Will 6 [-28]; FP 6 [0]
+	ST 4 [-36]; DX 8 [-40]; IQ 6 [-52]; HT 7 [-39]; HP 7 [6]; Basic Speed 4.5 [15]; Basic Move 4 [0]; Per 7 [-15]; Will 6 [-28]; FP 7 [0]
 	
 	\textbf{Advantages:}
-	Damage Resistance 10 (Limited, Heat/Fire, -40\%) [30]; \hyperref[elemental]{Elemental [7]}; Manifestation/Possession [62]; \hyperref[spirit_meta_trait]{Spirit Meta-Trait [69]};
+	Damage Resistance 9 (Limited, Heat/Fire, -40\%) [27]; \hyperref[elemental]{Elemental [7]}; Manifestation/Possession [62]; \hyperref[spirit_meta_trait]{Spirit Meta-Trait [69]};
 	
 	\textbf{Disadvantages:}
 	Doesn't Breath with Oxygen Combustion\footnote{This updates the Doesn't Breath in the Spirit Meta-Trait to add Oyxgen Combustion, -50\% to it.} [-10]; Innumerate [-5]; Invertebrate [-20]; Weakness, Water (1d/minute) [-40]
@@ -3451,18 +3465,19 @@
 	
 	\subsubsection*{Spirit of Fire Improvements}
 	
-	\textbf{\textit{Force 1 [131]:\\}}
+	\textbf{\textit{Force 1 Points: [64]}}
+	
+	\textbf{\textit{Automatic effects at each Force:\\}}
+	Damage Resistance 1 (Limited, Heat/Fire, -40\%) [3]	
 	\hyperref[spirit_force]{Spirit Force [10.5+]}\\\\
+	
+	\textbf{\textit{Optional effects at Higher Forces, +12 CP per Force above 1:\\}}
+	
 	\hyperref[accident]{Accident [38]}\\
 	\hyperref[confusion]{Confusion [42+]}\\
 	\hyperref[elemental_attack]{Elemental Attack (Fire) [5 per Magic]}\\
 	\hyperref[energy_aura]{Energy Aura [5.5 per Magic]}\\
-	\hyperref[engulf]{Engulf [29+];}\\
-	
-	\textbf{\textit{Automatic effects at Higher Forces:\\}}
-	Damage Resistance 1 (Limited, Heat/Fire, -40\%) [3]
-	
-	\textbf{\textit{Optional effects at Higher Forces, +12 CP per Force:\\}}
+	\hyperref[engulf]{Engulf [29+];}\\	
 	\hyperref[fear]{Fear [42+]}\\
 	\hyperref[guard]{Guard [12+]}\\
 	\hyperref[noxious_breath]{Noxious Breath}\\
@@ -3478,7 +3493,7 @@
 	
 	\subsubsection{Spirit of Air}
 	\begin{flushright}
-		-214 -171 Points Force 0
+		 -103 Points Force 0
 	\end{flushright}
 	
 	A Spirit of Air takes, once again unsurprisingly, the form of something heavily related to air. For hermetics, this is often a traditional air elemental, also heavily associated with lightning. For other traditions, this might also take the form of great birds or other things that represent or are associated with the air. In such a case, it is acceptable to switch \textit{Elemental [7]} with \textit{Bodily [5/0]}, and take either +1 HP/+1 ST respectively. Other possible forms include: flocks of crows or butterflies, a woman made of clouds, etc.
@@ -3490,7 +3505,7 @@
 	Unlike other spirits, their form of flight is impacted by air currents. Wind can push the spirit in its direction by 1 yard per second for every 5 mph of wind. This can sometimes be beneficial, providing a backdraft for the spirit! However, it is more likely to affect their ability to stay exactly where they want to be at a given moment. They are also particularly vulnerable to high and low pressures. Beyond the normal effects, whenever they are in a \textit{Thin or Dense} pressure (B429), their bodies are unable to properly maintain themselves, causing 1d unresisted HP damage per minute of exposure. The GM is within their rights to assign small bonus damage to high pressure attacks, such as crushing explosives.
 	
 	\textbf{Attributes:}
-	ST 1 [-54]; DX 8 [-40]; IQ 6 [-52]; HT 2 [-104]; HP 1 [0]; Basic Speed 3.25 [15]; Basic Move 3 [0]; Per 6 [-20]; Will 6 [-28]; FP 2 [0]
+	ST 3 [-42]; DX 9 [-20]; IQ 6 [-52]; HT 4 [-78]; HP 3 [0]; Basic Speed 4.25 [20]; Basic Move 5 [5]; Per 6 [-20]; Will 6 [-28]; FP 4 [0]
 	
 	\textbf{Advantages:}
 	\hyperref[elemental]{Elemental [7]}; Enhanced Move, Air, \(\times\)1.5 (All-Out, -20\%; Magical, -10\%) [7]; Manifestation/Possession [62]; \hyperref[spirit_meta_trait]{Spirit Meta-Trait [69]}; 
@@ -3503,16 +3518,18 @@
 	
 	\subsubsection*{Spirit of Air Improvements}
 	
-	\textbf{\textit{Force 1 [215]:\\}}
+	\textbf{\textit{Force 1 Points: [84]}}
+	
+	\textbf{\textit{Automatic effects at each Force:\\}}
 	\hyperref[spirit_force]{Spirit Force [10.5 per Magic]}\\\\
+	
+	\textbf{\textit{Optional effects at Higher Forces, +15 CP per Force above 1:\\}}
 	\hyperref[accident]{Accident [38]}\\
 	\hyperref[concealment]{Concealment [12+]}\\
 	\hyperref[confusion]{Confusion [42+]}\\
 	\hyperref[engulf]{Engulf [29+];}\\
 	\hyperref[movement]{Movement (Air) [54]}\\
 	\hyperref[search]{Search [29+]}\\
-	
-	\textbf{\textit{Optional effects at Higher Forces, +15 CP per Force:\\}}
 	\hyperref[elemental_attack]{Elemental Attack (Lightning) [5 per Force]}\\
 	\hyperref[energy_aura]{Energy Aura [5.5 per Magic}\\
 	\hyperref[fear]{Fear [42+]}\\
@@ -3531,7 +3548,7 @@
 	
 	\subsubsection{Spirit of Earth}
 	\begin{flushright}
-		-133 -91 Points Force 0
+		-86 Points Force 0
 	\end{flushright}
 	
 	Spirits of Earth, yet again, take the form or things heavily related to earth and nature. For hermetic styled traditions they have a wider range than normal, taking the form of dirt, sand, or sometimes even wood or metal (As detailed in other templates TODO). For more shamanic traditions, this can also take the form of burrowing creatures, subterranean creatures, etc. In such a case, it is acceptable to switch \textit{Elemental [7]} with \textit{Bodily [5/0]}, and take either +1 HP/+1 ST respectively.
@@ -3542,32 +3559,31 @@
 	
 	Spirits of Earth are also extremely versatile in the conditions that they can go into. They are immune to the effects of pressure and vacuum entirely. They are, however, not sealed (You can still water and Blight them)!
 	
-	\textbf{Attributes:} -305
-	ST 10 [0]; DX 4 [-120]; IQ 5 [-65]; HT 9 [-13]; HP 10 [0]; Basic Speed 2.75 [-10]; Basic Move 2 [0]; Per 6 [-20]; Will 6 [-28]; FP 9 [0]
+	\textbf{Attributes:}
+	ST 10 [0]; DX 5 [-100]; IQ 5 [-65]; HT 10 [0]; HP 10 [0]; Basic Speed 3.25 [-5]; Basic Move 3 [0]; Per 6 [-20]; Will 6 [-28]; FP 10 [0]
 	
-	\textbf{Advantages:} 193
-	Damage Resistance 5 (Semi-Ablative, -20\%) [20]; \hyperref[elemental]{Elemental [7]}; Manifestation/Possession [62]; Pressure Support 3 [15]; \hyperref[spirit_meta_trait]{Spirit Meta-Trait [69]}; Vacuum Support [5]
+	\textbf{Advantages:}
+	Damage Resistance 14 (Semi-Ablative, -20\%) [56]; \hyperref[elemental]{Elemental [7]}; Manifestation/Possession [62]; Pressure Support 3 [15]; \hyperref[spirit_meta_trait]{Spirit Meta-Trait [69]}; Vacuum Support [5]
 	
-	\textbf{Disadvantages:} -25
+	\textbf{Disadvantages:}
 	Innumerate [-5]; Invertebrate [-20]
 	
-	\textbf{Skills:} 12
+	\textbf{Skills:}
 	Assensing (H) Per [4]; Brawling (E) DX+2 [4]; Innate Attack (E) DX+2 [4]
 	
 	\subsubsection*{Spirit of Earth Improvements}
 	
-	\textbf{\textit{Force 1 [135]:\\}}
-	\hyperref[spirit_force]{Spirit Force [10.5 per Magic]}\\\\
-	\hyperref[binding]{Binding 6 [20; 3.3 per Will]}\\
-	\hyperref[guard]{Guard [21+]}\\
-	\hyperref[movement]{Movement (Ground) [54]}\\
-	\hyperref[search]{Search [29+]}
+	\textbf{\textit{Force 1 Points: [67]}}
 	
-	\textbf{\textit{Automatic effects at Higher Forces:\\}}
-	Binding +1 [3.3]
+	\textbf{\textit{Automatic effects at each Force:\\}}
+	\hyperref[spirit_force]{Spirit Force [10.5 per Magic]}\\\\
 	Damage Resistance +1 (Semi-Ablative, -20\%) [4]
 	
-	\textbf{\textit{Optional effects at Higher Forces, +7 CP per Force:\\}}
+	\textbf{\textit{Optional effects at Higher Forces, +11 CP per Force above 1:\\}}	
+	\hyperref[binding]{Binding [3.3 per Will]}\\
+	\hyperref[guard]{Guard [21+]}\\
+	\hyperref[movement]{Movement (Ground) [54]}\\
+	\hyperref[search]{Search [29+]}	
 	\hyperref[concealment]{Concealment [12+]}\\
 	\hyperref[confusion]{Confusion [42+]}\\
 	\hyperref[engulf]{Engulf [29+];}\\
@@ -3576,12 +3592,12 @@
 	
 	\subsubsection{Spirit of Beasts}
 	\begin{flushright}
-		-131 -98 Points Force 0
+		-84 Points Force 0
 	\end{flushright}
 	
 	Spirits of Beast are a strange and extremely diverse class of beings. They are known to take the form of any non-sapient animal - mythical or not - although they do sometimes stay away from more meta-physical depictions that are used for other elements, such as a Stormbird for a Spirit of Air. They aren't limited to singular animals, sometimes manifesting as an entire flock (Although this does not change their traits unless the GM \textit{really }wants to alter the templates!).
 	
-	The variety of forms can sometimes mean a required change in their Bodily Advantage, such as an Emu being Bodily (Bipedal). In such a case, the spirit retains the Discriminatory Smell \& Hearing [30], usually paying for it with -2 HT [-30] alternatively -1 DX \& -0.25 Basic Speed [-30] or as a final alternative -4 ST [-28]. GMs and players are free to mix these up as they wish, as long as the end up within \(\pm5\) points.
+	The variety of forms can sometimes mean a required change in their Bodily Advantage, such as an Emu being Bodily (Bipedal). In such a case, the spirit retains the Discriminatory Smell \& Hearing [30], usually paying for it with -2 HT [-26] alternatively -1 DX \& -0.25 Basic Speed [-25] or as a final alternative -4 ST [-24]. GMs and players are free to mix these up as they wish, as long as the end up within \(\pm5\) points.
 	
 	The Spirits themselves are solid all-rounders, with good ST and HT alongside average everything else. Their perception is aided by their enhanced senses, allowing for extremely precise smelling, tasting, and hearing alongside their good night vision.
 	
@@ -3592,26 +3608,28 @@
 	Spirits of Beast are additionally strange in their animistic mindset. They are bestial, meaning that they generally lack many "civilized" concepts such as property. They \textit{are not unintelligent,} they simply react like an animal would. Think similar to how a chimpanzee act and reacts. They are also unable to read text or abstract images, making them unable to even use many aspect of metahuman society!
 	
 	\textbf{Attributes:}
-	ST 9 [-6]; DX 6 [-80]; IQ 6 [-52]; HT 8 [-26]; HP 10 [0]; Basic Speed 3.75 [5]; Basic Move  [0]; Per 6 [-20]; Will 6 [-28]; FP 8 [0]
+	ST 8 [-12]; DX 7 [-60]; IQ 6 [-52]; HT 8 [-26]; HP 8 [0]; Basic Speed 3.75 [0]; Basic Move 3 [0]; Per 7 [-15]; Will 6 [-28]; FP 8 [0]
 	
-	\textbf{Advantages:} 136
+	\textbf{Advantages:}
 	\hyperref[elemental]{Bodily (Quadraped) [0]}; Manifestation/Possession [62]; Night Vision 5 [5]; \hyperref[spirit_meta_trait]{Spirit Meta-Trait [69]}
 	
-	\textbf{Disadvantages:} -35
+	\textbf{Disadvantages:} 
 	Bestial [-10]; Dyslexia [-10]; Innumerate [-5]; Non Iconographic [-10]
 	
-	\textbf{Skills:} 8
+	\textbf{Skills:} 
 	Assensing (H) Per [4]; Brawling (E) DX+2 [4]
 	
 	\subsubsection*{Spirit of Beast Improvements}
 	
-	\textbf{\textit{Force 1 [132]:\\}}
+	\textbf{\textit{Force 1 Points: [65]}}
+	
+	\textbf{\textit{Automatic effects at each Force:\\}}
 	\hyperref[spirit_force]{Spirit Force [10.5 per Magic]}\\\\
+	
+	\textbf{\textit{Optional effects at Higher Forces, +15 CP per Force above 1:\\}}
 	\hyperref[animal_control]{Animal Control [25+]}\\
 	\hyperref[fear]{Fear [42+]}\\
 	\hyperref[movement]{Movement (Various) [54]}\\
-	
-	\textbf{\textit{Optional effects at Higher Forces, +15 CP per Force:\\}}
 	\hyperref[concealment]{Concealment [12+]}\\
 	\hyperref[confusion]{Confusion [42+]}\\
 	\hyperref[guard]{Guard [21+]}\\
@@ -3622,13 +3640,13 @@
 	
 	\subsubsection{Spirit of Water}
 	\begin{flushright}
-		-176 -136 Points Force 0
+		-101 Points Force 0
 	\end{flushright}
 	
 	Spirits of Water most often take forms associated with the actual molecule itself, as a water elemental or some other representation. Sometimes (more often for shamanic traditions) they also take the forms of things like mermaids, sea serpents, or anything water related as well! As usual, such forms can justify a switch from \textit{Elemental [7]} to \textit{Bodily [5/0]}, and take either +1 HP/+1 ST respectively.
 	
-	\textbf{Attributes:} -256
-	ST 6 [-24]; DX 6 [-80]; IQ 6 [-52]; HT 6 [-52]; HP 6 [0]; Basic Speed  [0]; Basic Move  [0]; Per 6 [-20]; Will 6 [-28]; FP 6 [0]
+	\textbf{Attributes:}
+	ST 6 [-24]; DX 7 [-60]; IQ 6 [-52]; HT 6 [-52]; HP 6 [0]; Basic Speed 3.75 [10]; Basic Move 4 [5]; Per 6 [-20]; Will 6 [-28]; FP 6 [0]
 	
 	\textbf{Advantages:}
 	Amphibious [10]; Chameleon 1 [5]; \hyperref[elemental]{Elemental [7]}; Manifestation/Possession [62]; Pressure Support 3 [15]; Slippery 5 [10]; \hyperref[spirit_meta_trait]{Spirit Meta-Trait [69]}
@@ -3641,17 +3659,19 @@
 	
 	\subsubsection*{Spirit of Water Improvements}
 	
-	\textbf{\textit{Force 1 [177]:\\}}
+	\textbf{\textit{Force 1 Points: [87]}}
+	
+	\textbf{\textit{Automatic effects at each Force:\\}}
 	\hyperref[spirit_force]{Spirit Force [10.5 per Magic]}\\\\
+	
+	\textbf{\textit{Optional effects at Higher Forces, +15 CP per Force above 1:\\}}
 	\hyperref[concealment]{Concealment [12+]}\\
 	\hyperref[confusion]{Confusion [42+]}\\
 	\hyperref[engulf]{Engulf [29+]}\\
 	\hyperref[movement]{Movement (Sea) [54]}\\
 	\hyperref[search]{Search [29+]}\\
-	
-	\textbf{\textit{Optional effects at Higher Forces, +15 CP per Force:\\}}
 	\hyperref[accident]{Aciddent [39]}\\
-	\hyperref[binding]{Binding 6 [20+; 3.3 per Will]}\\
+	\hyperref[binding]{Binding [3.3 per Will]}\\
 	\hyperref[elemental_attack]{Elemental Attack (Water) [5.5 per Magic]}\\
 	\hyperref[energy_aura]{Energy Aura (Ice) [4.5 per Magic]}\\
 	\hyperref[guard]{Guard [21+]}\\
@@ -3659,13 +3679,13 @@
 	
 	\subsubsection{Spirit of Man}
 	\begin{flushright}
-		-212 -165 Points Force 0
+		-119 Points Force 0
 	\end{flushright}
 	
 	Spirits of Man are extremely interesting concepts to metahumanity, least of all for their apparent ability to mimic the identities of dead people - or that they might just \textit{be} dead people. The most common form by far are those that are metahuman in shape - but they are by not means limited to this! They can take the form of anything heavily related to metahumanity, such as infrastructure like street signs and trash cans, human-like animals such as monkeys and coyotes, or human-associated animals such as dogs! In such cases, they may switch their \textit{Bodily (Bipdeal) [5]} trait, or may even take the \textit{Elemental [7]} trait!
 	
-	\textbf{Attributes:} -283
-	ST 4 [-36]; DX 5 [-100]; IQ 6 [-52]; HT 6 [-52]; HP 4 [0]; Basic Speed  [0]; Basic Move  [0]; Per 7 [-15]; Will 6 [-28]; FP 6 [0]
+	\textbf{Attributes:}
+	ST 4 [-36]; DX 6 [-80]; IQ 7 [-39]; HT 7 [-39]; HP 4 [0]; Basic Speed 3.25 [0]; Basic Move 3 [0]; Per 7 [-15]; Will 6 [-28]; FP 6 [0]
 	
 	\textbf{Advantages:}
 	\hyperref[bodily]{Bodily (Biped) [5]}; Infravision [10]; Manifestation/Possession [62]; Night Vision 5 [5];  \hyperref[spirit_meta_trait]{Spirit Meta-Trait [69]}
@@ -3681,16 +3701,18 @@
 	
 	\subsubsection*{Spirit of Man Improvements}
 	
-	\textbf{\textit{Force 1 [212]:\\}}
+	\textbf{\textit{Force 1 Points: [87]}}
+	
+	\textbf{\textit{Automatic effects at each Force:\\}}
 	\hyperref[spirit_force]{Spirit Force [10.5 per Magic]}\\\\
-	\hyperref[accident]{Aciddent [39]}\\
+	
+	\textbf{\textit{Optional effects at Higher Forces, +15 CP per Force above 1:\\}}
+	\hyperref[accident]{Accident [39]}\\
 	\hyperref[concealment]{Concealment [12+]}\\
 	\hyperref[confusion]{Confusion [42+]}\\
 	\hyperref[guard]{Guard [21+]}\\
 	\hyperref[influence]{Influence [58]}\\
 	\hyperref[search]{Search [29+]}\\
-	
-	\textbf{\textit{Optional effects at Higher Forces, +15 CP per Force:\\}}
 	\hyperref[fear]{Fear [42+]}\\
 	Spell (Any spell that the summoner knows)\footnote{Spirits rarely cast at a Force above their magic, although they can.} [var]\\
 	\hyperref[movement]{Movement (Various) [54]}\\
