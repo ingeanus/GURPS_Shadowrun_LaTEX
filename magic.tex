@@ -3427,7 +3427,7 @@
 	
 	Here are a list of templates for known spirits. A conjurer does not necessarily have access to all of them, and when creating a character should get with their GM to determine which spirits are available to their tradition.
 	
-	Every Spirit has a Force rating when summoned. The base template represents \textit{Force 0}, and underneath are a list of improvements that can be added when summoning Force 1 and above (See Spirit Powers below), alongside limitations to those options for each type. Each increase of Force provides an amount of CP that is determined by the spirit Type, which can be chosen from the list, or any other trait that the GM approves; spirits gain a substantial amount of free points at Force 1 that can be spent on any of these improvements as normal, which include any normal CP bonuses for higher forces. Some powers are marked with a '+' sign, indicating that they have higher costs for Magic levels above 1.
+	Every Spirit has a Force rating when summoned. The base template represents \textit{Force 0}, and underneath are a list of improvements that can be added when summoning Force 1 and above (See Spirit Powers below), alongside limitations to those options for each type. Each increase of Force provides an amount of CP that is determined by the spirit Type, which can be chosen from the list, or any other trait that the GM approves; spirits gain a substantial amount of free points at Force 1 that can be spent on any of these improvements as normal, which include any normal CP bonuses for higher forces and \textit{does not} include Spirit Force for Force 1. Some powers are marked with a '+' sign, indicating that they have higher costs for Magic levels above 1.
 	
 	One important departure from Shadowrun is that spirits \textit{do not} come with a plethora of powers out of the gate. They must instead be purchased using either the starting points or using points for higher Forces. Not all of the points need to be spent. Notably, all Spirits are able to improve their base attributes with any points available. Each attribute can only be increased by an amount equal to Force (e.q Force 3 lets one increase each attribute by up to 3). Exceptions to this are Basic Speed (Up to +1.0 total), Basic Move (Up to +2), and HP/FP (Up to +30\% of (Their Base HP + Force)) - for all of these round down.	
 	
@@ -3574,17 +3574,19 @@
 	
 	\subsubsection*{Spirit of Wood}
 	\begin{flushright}
-		-62 Points Force 0
+		-61 Points Force 0
 	\end{flushright}
+
+	Spirits of Wood differ notably from Spirits of Plant in their state. Plants represent living flora in their shape and design, while Spirits of Wood are lumber, building materials, driftwood, and so on.
 	
 	\textbf{Attributes:}
-	ST 10 [0]; DX 5 [-100]; IQ 5 [-65]; HT 10 [0]; HP 11 [2]; Basic Speed 3.25 [-5]; Basic Move 3 [0]; Per 6 [-20]; Will 6 [-28]; FP 10 [0]
+	ST 10 [0]; DX 6 [-80]; IQ 5 [-65]; HT 10 [0]; HP 11 [2]; Basic Speed 3.25 [-5]; Basic Move 4 [5]; Per 6 [-20]; Will 6 [-28]; FP 9 [-3]
 	
 	\textbf{Advantages:}
-	Damage Resistance 1 (Semi-Ablative, -20\%) [4]; \hyperref[elemental]{Elemental [7]}; Manifestation/Possession [62]; \hyperref[spirit_meta_trait]{Spirit Meta-Trait [69]}; Vacuum Support [5]
+	Damage Resistance 2 (Semi-Ablative, -20\%) [8]; \hyperref[elemental]{Elemental [7]}; Manifestation/Possession [62]; \hyperref[spirit_meta_trait]{Spirit Meta-Trait [69]}; Vacuum Support [5]
 	
 	\textbf{Disadvantages:}
-	Innumerate [-5]
+	Fragile (Combustible) [-5]; Innumerate [-5]; Numb [-20]
 	
 	\textbf{Skills:}
 	Assensing (H) Per [4]; Brawling (E) DX+2 [4]; Innate Attack (E) DX+2 [4]
@@ -3703,13 +3705,13 @@
 	\end{flushright}
 	
 	\textbf{Attributes:}
-	ST 6 [-24]; DX 7 [-60]; IQ 6 [-52]; HT 6 [-52]; HP 7 [2]; Basic Speed 4.0 [15]; Basic Move 4 [0]; Per 6 [-20]; Will 6 [-28]; FP 6 [0]
+	ST 6 [-24]; DX 7 [-60]; IQ 6 [-52]; HT 7 [-39]; HP 8 [4]; Basic Speed 4.0 [15]; Basic Move 4 [0]; Per 6 [-20]; Will 6 [-28]; FP 7 [0]
 	
 	\textbf{Advantages:}
 	Damage Resistance 3 (Semi-Ablative, -20\%) [12]; \hyperref[elemental]{Elemental [7]}; Manifestation/Possession [62]; Pressure Support 3 [15]; \hyperref[spirit_meta_trait]{Spirit Meta-Trait [69]}; Vacuum Support [5]
 	
 	\textbf{Disadvantages:}
-	Innumerate [-5]; Vulnerability, Heat/Fire \& other Dehydrating Attacks (Common, \(\times3\)) [-45]
+	Fragile (Brittle) [-15]; Innumerate [-5]; Vulnerability, Heat/Fire \& other Dehydrating Attacks (Common, \(\times3\)) [-45]
 	
 	\textbf{Skills:}
 	Assensing (H) Per [4]; Brawling (E) DX+2 [4]; Innate Attack (E) DX+2 [4];
@@ -3765,14 +3767,47 @@
 	
 	\subsubsection{Spirit of Plant}
 	\begin{flushright}
-		TODO Points Force 0
-	\end{flushright}
+		-87 Points Force 0
+	\end{flushright} TODO: Some point shenanigans
 	
 	Spirits of Plant can be interesting in contrast to wooden Earth Spirits. Plant Spirits tend to focus more on the flora themselves than the idea of wood or the ground supporting it, meaning that they often take the forms of auspicious trees or plants as opposed to literal bodies of wood. Many traditions deliniate between cultivated and wild plants as well.
 	
+	
+	\textbf{Attributes:}
+	ST 7 [-18]; DX 6 [-80]; IQ 5 [-65]; HT 8 [-26]; HP 8 [2]; Basic Speed 3.75 [5]; Basic Move 4 [5]; Per 6 [-20]; Will 6 [-28]; FP 8 [0]
+	
+	\textbf{Advantages:}
+	Damage Resistance 2 (Semi-Ablative, -20\%) [8]; \hyperref[elemental]{Elemental [7]}; Manifestation/Possession [62]; \hyperref[spirit_meta_trait]{Spirit Meta-Trait [69]}
+	
+	\textbf{Disadvantages:}
+	Inumerate [-5]; Numb [-20]
+	
+	\textbf{Skills:}
+	Assensing (H) Per [4]; Brawling (E) DX+2 [4]; Counterspelling (H) 10 [4]
+	
+	\subsubsection*{Spirit of Plant Improvements}
+	
+	\textbf{\textit{Force 1 Points: [64]}}
+	
+	\textbf{\textit{Automatic effects at each Force:\\}}
+	\hyperref[spirit_force]{Spirit Force [10.5 per Magic]}\\\\
+	
+	\textbf{\textit{Optional effects at Higher Forces, +15 CP per Force above 1:\\}}
+	\hyperref[accident]{Accident [39]}\\
+	\hyperref[concealment]{Concealment [12+]}\\
+	\hyperref[confusion]{Confusion [42+]}\\
+	\hyperref[engulf]{Engulf [29+]}\\
+	\hyperref[fear]{Fear [42+]}\\
+	\hyperref[guard]{Guard [21+]}\\
+	\hyperref[magical_guard]{Magical Guard [3.3 per Magic]}\\
+	\hyperref[movement]{Movement (Land or Area) [54]}\\
+	\hyperref[noxious_breath]{Noxious Breath [23+]}\\
+	\hyperref[search]{Search [29+]}\\
+	\hyperref[silence]{Silence}\\
+	
 	\subsubsection{Guardian Spirit}
 	\begin{flushright}
-		-64 Points Force 0
+		-60 Points Force 0
 	\end{flushright}
 	
 	Taking a much more metaphysical approach than many spirits, Guardian Spirits often form as string warriors, avenging angels, guardian ancestors or spirits, and so on. Their forms are often dual-purposed to frighten opponents and reassure their allies, and as such often are impressive and mythological in their style, such as Norse Valkyries or Islamic Ifreets. While this most often means they have the Bodily (Biped) advantage, it's not impossible for them to take different or even abstract forms entirely, in which case this trait should be switched out appropriately.	
@@ -3790,11 +3825,11 @@
 	Code of Honor [-5 to -15]; Pacifism (Cannot Harm Innocents) [-10]; Sense of Duty (Summoner, a people, etc) [-5]
 	
 	\textbf{Skills:}
-	Assensing (H) Per [4]; Brawling (E) DX+2 [4]; Melee Weapon Skill (Chose one) (A) DX [4]; Innate Attack (E) DX+2 [4];
+	Assensing (H) Per [4]; Brawling (E) DX+2 [4]; Melee Weapon Skill (Chose one) (A) DX [4]; Innate Attack (E) DX+2 [4]; Counterspelling (H) 10 [4]
 	
 	\subsubsection*{Guardian Spirit Improvements}
 	
-	\textbf{\textit{Force 1 Points: [64]}}
+	\textbf{\textit{Force 1 Points: [60]}}
 	
 	\textbf{\textit{Automatic effects at each Force:\\}}
 	\hyperref[spirit_force]{Spirit Force [10.5 per Magic]}\\\\
@@ -3802,7 +3837,7 @@
 	\textbf{\textit{Optional effects at Higher Forces, +15 CP per Force above 1:\\}}
 	\hyperref[animal_control]{Animal Control [25+]}\\
 	\hyperref[concealment]{Concealment [12+]}\\
-	\hyperref[elemental_attack]{Elemental Attack (Any) [Var]}
+	\hyperref[elemental_attack]{Elemental Attack (Any) [Var]}\\
 	\hyperref[guard]{Guard [21+]}\\
 	\hyperref[fear]{Fear [42+]}\\
 	\hyperref[influence]{Influence [58]}\\
