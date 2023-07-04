@@ -3429,7 +3429,7 @@
 	
 	Every Spirit has a Force rating when summoned. The base template represents \textit{Force 0}, and underneath are a list of improvements that can be added when summoning Force 1 and above (See Spirit Powers below), alongside limitations to those options for each type. Each increase of Force provides an amount of CP that is determined by the spirit Type, which can be chosen from the list, or any other trait that the GM approves; spirits gain a substantial amount of free points at Force 1 that can be spent on any of these improvements as normal, which include any normal CP bonuses for higher forces. Some powers are marked with a '+' sign, indicating that they have higher costs for Magic levels above 1.
 	
-	One important departure from Shadowrun is that spirits \textit{do not} come with a plethora of powers out of the gate. They must instead be purchased using either the starting points or using points for higher Forces. Not all of the points need to be spent. Notably, all Spirits are able to improve their base attributes with any points available. Each attribute can only be increased by an amount equal to Force (e.q Force 3 lets one increase each attribute by up to 3). Exceptions to this are Basic Speed (Up to +1.0 total), Basic Move (Up to +2), and HP/FP (Up to +30\% of ST and HT respectively).	
+	One important departure from Shadowrun is that spirits \textit{do not} come with a plethora of powers out of the gate. They must instead be purchased using either the starting points or using points for higher Forces. Not all of the points need to be spent. Notably, all Spirits are able to improve their base attributes with any points available. Each attribute can only be increased by an amount equal to Force (e.q Force 3 lets one increase each attribute by up to 3). Exceptions to this are Basic Speed (Up to +1.0 total), Basic Move (Up to +2), and HP/FP (Up to +30\% of (Their Base HP + Force)) - for all of these round down.	
 	
 	Some spirit types might have certain traits that are automatically improved at higher levels of Force if taken, in which case they will be noted there. While the GM technically decides and is the final arbitrator on what traits a spirit is summoned with, it is recommended to allow the summoner to choose what they want, as long as it seems reasonable.
 	
@@ -3722,7 +3722,7 @@
 	Spirits of Man are extremely interesting concepts to metahumanity, least of all for their apparent ability to mimic the identities of dead people - or that they might just \textit{be} dead people. The most common form by far are those that are metahuman in shape - but they are by not means limited to this! They can take the form of anything heavily related to metahumanity, such as infrastructure like street signs and trash cans, human-like animals such as monkeys and coyotes, or human-associated animals such as dogs! In such cases, they may switch their \textit{Bodily (Bipdeal) [5]} trait, or may even take the \textit{Elemental [7]} trait!
 	
 	\textbf{Attributes:}
-	ST 4 [-36]; DX 6 [-80]; IQ 7 [-39]; HT 7 [-39]; HP 6 [4]; Basic Speed 3.50 [5]; Basic Move 4 [5]; Per 7 [-15]; Will 6 [-28]; FP 6 [0]
+	ST 4 [-36]; DX 6 [-80]; IQ 7 [-39]; HT 7 [-39]; HP 4 [0]; Basic Speed 3.50 [5]; Basic Move 4 [5]; Per 7 [-15]; Will 6 [-28]; FP 6 [0]
 	
 	\textbf{Advantages:}
 	\hyperref[bodily]{Bodily (Biped) [5]}; Infravision [10]; Manifestation/Possession [62]; Night Vision 5 [5];  \hyperref[spirit_meta_trait]{Spirit Meta-Trait [69]}
@@ -3734,7 +3734,7 @@
 	Delusion (They are the spirit of a dead person) [-10]\\
 	
 	\textbf{Skills:}
-	Assensing (H) Per [4]; Brawling (E) DX+2 [4]; Spellcasting (H) 10 [4];
+	Assensing (H) Per [4]; Brawling (E) DX+2 [4]; Spellcasting (H) 10 [4]; Innate Attack (E) DX+2 [4];
 	
 	\subsubsection*{Spirit of Man Improvements}
 	
@@ -3790,9 +3790,9 @@
 	Code of Honor [-5 to -15]; Pacifism (Cannot Harm Innocents) [-10]; Sense of Duty (Summoner, a people, etc) [-5]
 	
 	\textbf{Skills:}
-	Assensing (H) Per [4]; Brawling (E) DX+2 [4]; Melee Weapon Skill (Chose one) (A) DX [4]; Spellcasting (H) 10 [4]; 
+	Assensing (H) Per [4]; Brawling (E) DX+2 [4]; Melee Weapon Skill (Chose one) (A) DX [4]; Innate Attack (E) DX+2 [4];
 	
-	\subsubsection*{Spirit of Man Improvements}
+	\subsubsection*{Guardian Spirit Improvements}
 	
 	\textbf{\textit{Force 1 Points: [64]}}
 	
@@ -3809,14 +3809,50 @@
 	\hyperref[magical_guard]{Magical Guard [3.3 per Magic]}\\
 	\hyperref[movement]{Movement (Various) [54]}\\
 	\hyperref[natural_weapon]{Natural Weapon [Var]}\\
-	Skill (Choose any Combat skill, the spirit gains [4] points in it) (Maximum of Force skills, can be stacked)\\
+	Skill (Choose any Combat skill, the spirit gains [4] points in it) (Can be taken Force times, can be stacked)\\
 	\hyperref[psychokinesis]{Psychokinesis}\\
 	
 	\subsubsection{Task Spirit}
 	\begin{flushright}
-		TODO Points Force 0
+		-80 Points Force 0
 	\end{flushright}
 	
 	Yet another metaphysical style of spirit, Task Spirits take forms related to workers - often physical, although that is changing somewhat as traditions blend with the modern world. These can be carpenters, smiths, or even hackers, but can also be non-human, such as Golems. Their style can range greatly, from regal consultant to slave, and overlap heavily with other spirits, especially Spirits of Man.
+	
+	These Spirits excel at any form of mundane work, ranging from physical labor to typing data in excel. The effect of the Sixth World is obvious on them, with many Task Spirits able to perform even Technological Tasks (although they are unable to interface with many modern pieces of technology and require older peripherals to do so). This variety in effect makes them absurdly versatile and allow summoners to find a solution for almost any mundane task with even the most simple spirit and a bit of time. Like most spirits, they struggle in truly difficult situations unless they are of a higher force, but the Task Spirit shines when given a goal and a month to complete it, not when defusing a ticking timebomb.
+	
+	\textbf{Attributes:}
+	ST 8 [-12]; DX 7 [-60]; IQ 7 [-39]; HT 6 [-52]; HP 7 [-2]; Basic Speed 3.75 [15]; Basic Move 4 [5]; Per 7 [-15]; Will 6 [-28]; FP 6 [0]
+	
+	\textbf{Advantages:}
+	\hyperref[bodily]{Bodily (Biped) [5]}; Manifestation/Possession [62]; \hyperref[spirit_meta_trait]{Spirit Meta-Trait [69]}
+	
+	\textbf{Disadvantages:}
+	\textit{Choose -40 points in disadvantages (Preferably mental) to represent the spirit's mentality. Some niche suggestions:\\}
+	Slave Mentality [-40]; Hidebound [-5]; Ham-Fisted [-5/-10]; Hunchback [-10]
+	
+	\textbf{Skills:}
+	Assensing (H) Per [4]; Brawling (E) DX+2 [4]; Any Artisan, Crafting, Technical, or similar skill (E/A/H) Att+2/Att+1/Att+0 [4];
+	
+	\subsubsection*{Task Spirit Improvements}
+	
+	\textbf{\textit{Force 1 Points: [80]}}
+	
+	\textbf{\textit{Automatic effects at each Force:\\}}
+	\hyperref[spirit_force]{Spirit Force [10.5 per Magic]}\\\\
+	
+	\textbf{\textit{Optional effects at Higher Forces, +15 CP per Force above 1:\\}}
+	\hyperref[accident]{Accident [39]}\\
+	\hyperref[binding]{Binding [3.3 per Will]}\\
+	\hyperref[concealment]{Concealment [12+]}\\
+	Discriminatory Hearing [15] \\
+	Discriminatory Smell [15] \\
+	\hyperref[influence]{Influence [58]}\\
+	Infravision [10] \\
+	\hyperref[movement]{Movement (Various) [54]}\\
+	Night Vision 5 [5] \\
+	\hyperref[search]{Search [29+]}\\
+	Skill (Choose any Technological or Athletic skill, the spirit gains [4] points in it) (Can be taken Force times, can be stacked)\\
+	\hyperref[psychokinesis]{Psychokinesis}\\
 	
 \end{multicols*}
