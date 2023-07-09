@@ -541,6 +541,15 @@
 	Used to maintain control of a Coporate Device, preventing users from doing things like sharing proprietary info online, going to blocked sites, etc
 	Analyze :: Complexity 3
 	Control :: Complexity 4
+	
+	\subsubsection{Data Bomb — x1 C3 + x2 C(3+L) + x3 C(5+L)}
+	
+	Stealth :: Complexity 4 + 1 + Level :: Keeps itself hidden on a file
+	Analyze :: Complexity 3 + Level :: Watches a file / ICE for any unauthorized alterations or access
+	Trigger :: Complexity 3 :: Triggers the following programs if so. Often triggers Search follow by both Breach and Damage (At -1).
+	Search :: Complexity 3 + Level :: Finds the user
+	Breach :: Complexity 3 + 2+ Level :: Breaches firewalls
+	Damage :: Complexity 5 + Level :: And attempts to fry their brains
 
 	
 	\subsection{Sample Hosts}
