@@ -1,6 +1,6 @@
 \section{Matrix}
 
-\begin{multicols*}{3}
+\begin{multicols}{3}
 	
 	\subsection{Books}
 	
@@ -292,7 +292,9 @@
 	When working in very large groups, a network can be very difficult to hide from observers - especially if the computers in the network were not legally acquired. Many thousands of un-noteworthy computers all turning on a single target is something that will attract more attention than if one computer had originally, especially to organizations like GOD, which have a big picture view of the Matrix as a whole.
 	
 	\textit{\textcolor{OliveGreen}{Mark's network weighs 5,137 lbs and costs 1,027,400¥ in hardware and 308,220¥ in software (If the GM does not let him duplicate code!); compared to a Macroframe weighing 4,000 lbs and costing 1,000,000¥ in hardware, it will certainly cost more and take up more space, but it is also much harder to defeat, requiring an opponent to either take down all computers, or successfully trace the Listen programs back to Mark's master computer.}}
-	
+		
+	\end{multicols}
+	\begin{multicols}{2}
 	
 	\subsubsection{Software Packages}\label{software_packages}
 	
@@ -300,43 +302,52 @@
 	
 	All of these packages come in a Level, starting at 0. Levels determine what Complexity the software is run at, which in turn determines skill defaults as covered in Cyberpunk. As such, for more powerful hardware, simply increase the Level for a more powerful piece of software.
 	
-	The total Complexity of the Package is listed in a format like: x2 C3; x3 C(3+L), which indicates the packages has 2 Complexity 3 programs that don't increase with Level, and 3 Complexity 3 Programs that increase with Level. In this case, a Level 3 Package would have 2 Complexity 3 Programs and 3 Complexity 6 Programs, and may be appropriate for a Host or Device of Complexity 7 or more.
+	The total Complexity of the Package is listed in a format like: $\times$2 Complexity 3; $\times$3 Complexity 3 + Level, which indicates the packages has 2 Complexity 3 programs that don't increase with Level, and 3 Complexity 3 Programs that increase with Level. In this case, a Level 3 Package would have 2 Complexity 3 Programs and 3 Complexity 6 Programs, and may be appropriate for a Host or Device of Complexity 7 or more.
 	
-	\paragraph{Firewall}\label{firewall}
+	\paragraph{Firewalls}\label{firewall}
 	
-	Firewalls are programs that are, at their core, meant to control what traffic comes in or out of a computer. 
+	Firewalls are programs that are, at their core, meant to control what traffic comes in or out of a computer with the purpose of protecting it from malicious activity. 
 	
 	Certain superior models will also perform actions upon suspicious behaviour, such as alerting admins, tracing the connection, or in extreme cases attacking the connection.
 	
 	They aren't necessarily limited to that however! Firewalls may shutdown the computer if triggered, spawn IC to respond, delete files when alerted, trigger whole suites (such as a Data Bomb!), or more. There's plenty of possibility, so get creative.
 	
-	\textbf{Inferior Firewall} For this simple Firewall, the ICE prevents access to the device, while the Listen allows authorized users to bypass the ICE.
+	\textbf{Inferior Firewall} 
+	
+	\textbf{$\times$2 Complexity 3+L}
+	
+	For this simple Firewall, the ICE prevents access to the device, while the Listen allows authorized users to bypass the ICE.
 	
 	\vbox{
 		\begin{itemize}
 			\itemsep 0pt
-			\item x2 C(3+L)
 			\item ICE :: Complexity 3 + L
 			\item Listen :: Complexity (2+1) + L
 		\end{itemize}
 	}
 	
-	\textbf{Standard Firewall} A standard Firewall: the ICE protects the device, the Listen allows authorized users access, the Analyze monitors the security of the ICE and Listen, and the Trigger acts when anomalies are detected by the Analyze - usually it calls the admins.
+	\textbf{Standard Firewall} 
+	
+	\textbf{$\times$1 Complexity 3 and $\times$3 Complexity 3+L}
+	
+	A standard Firewall: the ICE protects the device, the Listen allows authorized users access, the Analyze monitors the security of the ICE and Listen, and the Trigger acts when anomalies are detected by the Analyze - usually it calls the admins.
 	
 	\begin{itemize}
 		\itemsep 0pt
-		\item x1 C3; x3 C(3+L)
 		\item ICE :: Complexity 3 + L
 		\item Listen :: Complexity (2+1) + L
 		\item Analyze :: Complexity 3 + L
 		\item Trigger :: Complexity 3
 	\end{itemize}
 	
-	\textbf{Superior Firewall} Closer to an IPS, this Firewall works the same as above, except instead of the Trigger just calling the admins, it also attempts to find the malicious connection and Analyze it (For things like IP, Device ID, etc).
+	\textbf{Superior Firewall} 
+	
+	\textbf{$\times$1 Complexity 3 and $\times$5 Complexity 3+L}
+	
+	Closer to an IPS (Intrusion Protection System), this Firewall works the same as above, except instead of the Trigger just calling the admins, it also attempts to find the malicious connection and Analyze it (For things like IP, Device ID, etc).
 	
 	\begin{itemize}
 		\itemsep 0pt
-		\item x1 C3; x5 C(3+L)
 		\item ICE :: Complexity 3 + L
 		\item Listen :: Complexity (2+1) + L
 		\item Analyze :: Complexity 3 + L
@@ -415,7 +426,7 @@
 	
 	\textbf{Perks:}
 	Console Monkey [1]
-	
+				
 	\subsection{IC}
 	
 	Intrusion Countermeasures (Not to be confused with the program ICE), are collections of programs that are designed to automatically respond to certain threat vectors inside of a host. These can provide a staggering range of capabilities, from Patrol IC constantly scanning credentials, to the notorious Black IC trying to flatline unauthorized users.
@@ -430,14 +441,89 @@
 	
 	\subsubsection{Black IC}
 	
+	\textbf{$\times$3 Complexity 4+L and $\times$2 Complexity 5+L}
+	
+	Black IC is the real nasty stuff watching over hosts that \textit{must absolutely not have intruders}. This stuff is only used when it's acceptable to risk your employees and workers - after all any piece of software can glitch when you're performing routine maintenance. It's intended purpose is to frag whomever the host tells it too - and it's usually quite good at that.
+	
+	It's usually not running on a host at all times for safety reasons, but place like MCT Zero Zones will often ignore these trivialities. This can make it relatively vulnerable to spin up on the host, due to the relative complexity of the IC itself, so programs are usually spun up only after the prior one has completed its task - the exception of course being Link-Lock, which will try to spin up alongside Damage.
+	
+	These are often accompanied by firewalls in order to prevent their subprograms from simply being shut off.
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item Search :: Complexity (3+1) + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Used to trace the connection of the Decker, gain his physical location and allow for counterhacking.
+		\end{itemize}
+		\item Analyze :: Complexity (3+1) + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Analyzes the security of the Decker's IC, in order to find the quickest route to break in.
+		\end{itemize}
+		\item Breach :: Complexity (3+1) + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Used to quickly break down the IC of the Decker.
+		\end{itemize}
+		\item Link-Lock :: Complexity 5 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Locks the decker down so that the Black IC can properly track their location and - most importantly - kill them.
+		\end{itemize}
+		\item Damage :: Complexity 5 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Frag the Decker.
+		\end{itemize}				
+	\end{itemize}
+	
 	\subsubsection{Patrol IC}
+	
+	\textbf{$\times$1 Complexity 3 and $\times$1 Complexity 3+L}
+	
+	A staple of any professional host, Patrol IC are a form of IDS (Intrusion Detection Systems) with the purposes of scanning the host for anomalous activities. These programs are designed to regularly Search for anomalous activity, usually looking at security logs, analyzing personnel activity and matching to known locations/activity/personalities, scanning files for malicious code, and so on. This is, of course, represented in the Quick Contest between the Patrol IC's Search versus the Decker's Stealth.
+	
+	If the Patrol IC notices anything obviously anomalous, it will Trigger and report this to the administrators. Otherwise, it will Analyze the anomaly in order to better determine the course of action. Generally, the GM can arbitrate when this difference occurs whenever the Decker gets spotted; usually it comes down to the actions taken by the Decker and whether they are obviously malicious, but it could also occur on ties or low Margins of Victory for the IC if thematically appropriate.
+	
+	More powerful versions will also be running an Analyze program on themselves (adjusted by Level accordingly) in order to prevent tampering of the Patrol IC, which are often found in any enterprise level system.
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item Search (Continuous) :: Complexity 3 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Used to search for unknown or anomalous users, devices, and activity for further analysis. Generally higher complexity implies superior ways to detect, match, and analyze for those anomalies.
+		\end{itemize}
+		\item Trigger :: Complexity 3
+		\begin{itemize}
+			\itemsep 0pt
+			\item Reports any likely anomalies to the admins.
+		\end{itemize}
+	\end{itemize}
+
+	The above is usually followed up with the following programs:
+
+	\begin{itemize}
+		\itemsep 0pt
+		\item Analyze (Continuous) :: Complexity 3 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Used to scan files, users, and devices in order to determine any suspicious activity. Generally higher complexity implies superior ways to detect, match, and analyze for those anomalies.
+		\end{itemize}
+		\item Trigger :: Complexity 3
+		\begin{itemize}
+			\itemsep 0pt
+			\item Reports any likely anomalies to the admins.
+		\end{itemize}
+	\end{itemize}
+
 	
 	\subsection{Sample Hosts}
 	
 	\subsubsection{The Seattle Metroplex Administration Host}
 	
-	\textbf{Host Computer:}
-	Mainframe, Complexity 7;
+	\hspace{\parindent}\textbf{Host Computer:} Mainframe, Complexity 7
 	
 	\textbf{Programs:}
 	1 Complexity 7, Dedicated to employee and public use. Provides tools, searching, payment, sign in, system controls, etc. If the player needs to access these (For instance, accessing the payment security that the host runs themselves), they are usually Complexity 5 programs.
@@ -449,12 +535,23 @@
 		\item 1 Complexity 6 Analyze (+3), watches the ICE and Listen programs to detect any signs of hacking.
 		\item 1 Complexity 3 Trigger, alerts system admins if there is any sign of hacking via Analyze.
 	\end{itemize}
+
+	\textbf{IC:}
+	
+	The host is meant to be used regularly by the public, so all IC should focus on detection and prevention. Dangerous IC are right out and even privacy breaching IC meant to track down offenders might cause legal issues and will be used with caution.
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item 1 Level 3 Patrol IC with anti-tamper (x2 Complexity 6 and x1 Complexity 3)
+	\end{itemize}
+	
 	
 	\textit{Leftover Space:}
 	\begin{itemize}
 		\itemsep 0pt
-		\item 6 Complexity 6 Programs
-		\item 9 Complexity 3 Programs
+		\item 4 Complexity 6 Programs
+		\item 9 Complexity 5 Programs
+		\item 8 Complexity 3 Programs
 	\end{itemize}
 	
 	\textbf{Spyder:}
@@ -465,4 +562,4 @@
 	
 	For templates on computers, see \hyperref[ai_computer]{the AI section on computer bodies.}
 	
-\end{multicols*}
+\end{multicols}
