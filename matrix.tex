@@ -518,27 +518,77 @@
 		\end{itemize}
 	\end{itemize}
 
-	\subsubsection{Bloodhoud IC — x1 C3 + x3 C(3+L)}
+	\subsubsection{Bloodhoud IC}
 	
-	Search :: Complexity 3 + Level :: Looks for unauthorized users
-	Trigger :: Complexity 3 :: Reports unsual activity to the admins and triggers the following Programs
-	Breach :: Complexity 3 + Level :: Breaches ICE to allow Analyze to function
-	Analyze :: Complexity 3 + Level :: Attempts to track the location of the user
+	\textbf{$\times$1 Complexity 3 and $\times$3 Complexity 3+L}
 	
-	\subsubsection{Flicker IC — x3 C(5+L)}
+	An uncommon alternative to Patrol IC that combines the capabilities of Trace IC, Bloodhound IC take a proactive approach to detecting and dealing with malicious actors that allow for a quicker response than normal. This has all of the obvious benefits, but is usually kept to the simpler tasks of tracking physical locations and gathering data for authorities, as opposed to engaging in all-out matrix combat without the administrator's approval.
 	
-	Breach :: Complexity 3 + 2 + Level :: Attempts to disable ICE
-	Control :: Complexity 4 + 1 + Level :: Attempts to disconnect your VR avatar without turning off your device
-	Link-Lock :: Complexity 5 + Level
+	Their design varies wildly, depending on the server admin's goals, but the two most common are: Adding in an Analyze program (adjusted by Level accordingly) to discover any tricks or vulnerabilities in a decker's ICE before attempting to breach and to enhance reliability and security by running an Analyze program on themselves (adjusted by Level accordingly) to prevent tampering.
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item Search :: Complexity 3 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Used to look for any anomalous users, similarly to Patrol IC. Can be left off if fed information from elsewhere.
+		\end{itemize}
+		\item Trigger :: Complexity 3
+		\begin{itemize}
+			\itemsep 0pt
+			\item Used to report anomalous activity to the administrators and to trigger the latter programs.
+		\end{itemize}
+		\item Breach :: Complexity 3 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Breaches the ICE for the decker, allowing for Analyze to track their location. Sometimes includes another Analyze program invoked to analyze the ICE before breaching.
+		\end{itemize}
+		\item Analyze :: Complexity 3 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Attempts to track the matrix and physical location of the user, alongside generally scraping whatever information it can.
+		\end{itemize}
+	\end{itemize}
+	
+	\subsubsection{Flicker IC}
+	
+	\textbf{$\times$3 Complexity 5+L}
+	
+	A modern invention, the Flicker IC attempts to exploit some of the inherent speed of the Matrix to buy time for other information gathering processes and IC by disconnecting or interrupting the VR capabilities of the cyberdeck. These are most often found in hosts that care a lot about discovering their intruder's identities instead of just geeking them - whether that be for blackmail, tracking them down, or whatnot. Removing anyone suddenly from VR can be dangerous in general, leading some hosts to make Flicker IC jack the user out using the Control program before disabling VR capabiltiies - although that is by no means required or common.
+	
+	Disabling the VR module presents a number of immediate bonuses for the host compared to the decker. The Matrix generally runs faster than meatspace, meaning the GM has reasonable leeway regarding turn orders here. However, the main benefit is the penalty applied to the decker for having a worse interface - which often comes out to a -6 for using a terminal (if they even have one!) against Total VR. And of course, being dumped from Total VR also causes Dumpshock, which can incapacitate a Decker further. 
+	
+	If they're still conscious, most deckers opt to power off their deck (Which usually must be done by removing power supply or using hardware shutoffs, since the IC will likely win any Quick Contest to shut off using software).
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item Breach :: Complexity 3 + 2 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Breaches the ICE for the decker, allowing for Control to manipulate their device.
+		\end{itemize}
+		\item Control :: Complexity 4 + 1 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Disconnects your VR module without turning off the device, allowing for more unresistant access to the decker's device.
+		\end{itemize}
+		\item Link-Lock :: Complexity 5 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Used to maintain the connection if the Decker attempts to sever it in the meantime.
+		\end{itemize}
+	\end{itemize}
 	
 	\subsubsection{Marker / Jammer / Acid IC}
+	
+	\textbf{$\times$2 Complexity 4+L}
 	
 	Breach :: Complexity 3 + 1 + Level :: Attempts to disable ICE
 	Alter :: Complexity 4 + Level :: Attempts to alter / disable Stealth, ICE, or Damage Programs.
 	
 	\subsubsection{Corporate Control Software — x1 C3 + x1 C4}
 	
-	Used to maintain control of a Coporate Device, preventing users from doing things like sharing proprietary info online, going to blocked sites, etc
+	Used to maintain control of a Corporate Device, preventing users from doing things like sharing proprietary info online, going to blocked sites, etc
 	Analyze :: Complexity 3
 	Control :: Complexity 4
 	
