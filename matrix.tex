@@ -45,6 +45,14 @@
 	
 	Lastly, you can take the painful road by hard jacking out. This is where a friendly companion of your physically either unplugs your connection to your cyberdeck, turns it off, or just breaks it. This immediately requires the user to roll HT as if resisting the effects of the Damage program, with a -4 penalty. In cases where there is not a Link-Lock program running and the user is hard jacked out, this roll is made at no penalty.
 	
+	\subsubsection{Home Rules}
+	
+	\paragraph{Below Minimum Complexity Programs}\label{low_complexity}
+	
+	One of the shortcomings of the Pyramid \#3/21 article is the lack of low complexity programs, which was done in order to make high complexity options more valuable and restrict cyberdeck usage to certain levels. However, it makes it seem weird that potato computers, TL8 computers, and similar situations are utterly unable to run certain programs at a snail's pace - especially when some of those are relatively trivial applications! The idea that an embedded device or a dinosaur phone (Both Complexity 3) are unable to use the Alter and Control Program or that a dinosaur piece of embedded hardware (Complexity 2) can't even run a firewall both seem very odd.
+	
+	As a middleground, the GM should offer a heavily penalized option for running lower than minimum complexity programs. This comes in two flavors: firstly, if the decker is having to make the functionality on computers that lack the software entirely, this should use the \textit{Improvised Equipment} penalty for more mundane programs (e.g. Alter, Control, Listen, etc) or the \textit{No Equipment} penalty for less mundane ones (e.g. Stealth, Damage) (B345). If they have actual software, but it is either created to work on a slower system or is simply slowed down by the hardware itself, apply a -2 penalty to all rolls using software for each Complexity below the minimum.
+	
 	\subsection{Cyberdecks}
 	
 	The GM is heavily advised to help a player design their own Cyberdecks, which are as much a tool as they are a form of expression by the Decker. They can provide a wide array of specializations and opportunities for hackers, whether that be portability, program limitations, high complexity, improved defenses, terminal styles, or more!
@@ -218,8 +226,6 @@
 	
 	Hosts in base Shadowrun are generally given ratings from 1-12, ranging from home LANs to AAA Zero Zone equivalents, which determine how difficult they are to hack. In GURPS, the skill of a network's ICE program is a modifier to the Spyder's (or whomever set up/maintains the host) skill, based on Complexity; as such, the rating of a host is dependant on the Spyder's base skill and the Complexity of the host.
 	
-	Below is a table that provides a range of example Spyder Skills, Complexities, and total Effective Skill for Hosts, given by a Rating system similar to Shadowrun's original style.
-	
 	\begin{center}
 		\begin{tabularx}{0.47\textwidth}{|c|c|c|X|}
 			\hline
@@ -241,7 +247,9 @@
 			\hline
 		\end{tabularx}
 	\end{center}
-	
+
+	Below is a table that provides a range of example Spyder Skills, Complexities, and total Effective Skill for Hosts, given by a Rating system similar to Shadowrun's original style.
+		
 	Another important consideration when designing hosts is software. It can be tempting to see Complexity 7 Hosts as an opportunity to slap Complexity 7 ICE on them, but hosts have further purpose than to be literal brick walls!
 	
 	Hosts have limited program slots/processing power, which has to be used providing their services. If an admin takes their Complexity 7 Host and runs a Complexity 7 ICE and Listen on it at all times, there would be no program slots left for any non-trivial commercial use!
@@ -259,9 +267,14 @@
 	
 	In such a case, \textit{all of the program slots} can be used for security purposes! However, these are often much less powerful than the host as a whole, so the effect is not that different.
 	
-	\begin{wrapfigure}[17]{l}{70pt}
+	\begin{wrapfigure}[14]{l}{70pt}
 		
 	\end{wrapfigure}
+
+	The math surrounding programs slots can sometimes be tedious. An easier way to go about it is to remember that all programs take up 1/10 the complexity of the size above them. If you start out with the 2 slots allowed for a computer at base, you can multiply by 10, subtract out any used slots at that level (Which is Complexity-1), then multiply by 10 again and continue for each complexity down to 1. You can simply reverse this by dividing by 10 repeatedly, after which you have a decimal number for which each number left to right indicates your remaining slots for each complexity from highest to lowest. As a quick example, with a Complexity 6 Computer running 1 C6, 4 C5, 2 C4, 0 C3, and 1 C2, you perform the following steps: \[(((((2 - 1) \times 10 - 4) \times 10  - 2) \times 10 - 0) \times 10 - 1)\]
+	
+	This gives a total of 5,799, which can be divided by 10 four times (Going back from C2 scale to C6 scale) for a value of 0.5799 - indicating you have 0 C6, 5 C5, 7 C4, 9 C3, and 9 C2 program slots remaining.
+	
 	
 	\subsubsection{Distributed Processing}
 	
@@ -583,58 +596,118 @@
 	
 	\textbf{$\times$2 Complexity 4+L}
 	
-	Breach :: Complexity 3 + 1 + Level :: Attempts to disable ICE
-	Alter :: Complexity 4 + Level :: Attempts to alter / disable Stealth, ICE, or Damage Programs.
+	Marker, Jammer, and Acid IC all fall under a core idea of disabling programs and capabiltiies that give deckers the edge over their competition. Most often, cowboy jockeys have superior skills and equipment than a corporation is able to bare on them in short notice, for which these IC are intended to level the playing field by preventing certain programs from running in order to guarantee the goals of other IC or Spyders. None of these IC are necessarily exclusive - the Alter program can disable any other program as necessary - however, they usual focus on synergizing with other IC instead of trying to break down everything.
 	
-	\subsubsection{Corporate Control Software — x1 C3 + x1 C4}
+	Marker IC focuses on removing the Stealth program, Jammer IC does so for the Damage program, and Acid IC removes the ICE program.
 	
-	Used to maintain control of a Corporate Device, preventing users from doing things like sharing proprietary info online, going to blocked sites, etc
-	Analyze :: Complexity 3
-	Control :: Complexity 4
+	\begin{itemize}
+		\itemsep 0pt
+		\item Breach :: Complexity 3 + 1 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Breaches the ICE for the decker, allowing for Alter to manipulate the programs on the device.
+		\end{itemize}
+		\item Alter :: Complexity 4 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Attempts to alter or disable corresponding programs, such as Stealth, ICE, or Damage.
+		\end{itemize}
+	\end{itemize}
 	
-	\subsubsection{Data Bomb — x1 C3 + x2 C(3+L) + x3 C(5+L)}
+	\subsubsection{Corporate Control Software}
 	
-	Stealth :: Complexity 4 + 1 + Level :: Keeps itself hidden on a file
-	Analyze :: Complexity 3 + Level :: Watches a file / ICE for any unauthorized alterations or access
-	Trigger :: Complexity 3 :: Triggers the following programs if so. Often triggers Search follow by both Breach and Damage (At -1).
-	Search :: Complexity 3 + Level :: Finds the user
-	Breach :: Complexity 3 + 2+ Level :: Breaches firewalls
-	Damage :: Complexity 5 + Level :: And attempts to fry their brains
+	\textbf{$\times$1 Complexity 3 and $\times$1 Complexity 4}
+	
+	A common piece of software for any professional enterprise, this software allows Spyders to watch over wageslave activity and prevent any unwanted behaviour such as going on the certain parts of the Matrix, releasing controlled information, and so on. Due to its capabilities for controlling large swathes of computers, it's not uncommon for this program to also have additional security such as Analyze programs attached to it.
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item Analyze :: Complexity 3
+		\item Control :: Complexity 4
+	\end{itemize}
+	
+	\subsubsection{Data Bomb}
+	
+	\textbf{$\times$1 Complexity 3 and $\times$4 Complexity 4+L and $\times$1 Complexity 5+L}
+	
+	Data Bombs are a curious kind of "smart trap" in the matrix that are sometimes used to maliciously protect highly sensitive files. They differ from the usual stupidity of normal traps, in that they have highly capable programming that can allow for more accurate discrimination of targets - alongside the wide array of payloads one can bring in the matrix. Of course, they can and do still harm unsuspecting users (or sometimes people who put that password in wrong too many times), which needs to be taken account for by the spyders setting them up.
+	
+	Data Bombs themselves are payloads attached to some piece of software - usually important files but it can be programs or users and so on. Their purpose is to automatically attack against unauthorized intrusions, which can range from mundane warnings to attempting to kill the intruder - the most common of which is to fry the hardware of the intruder. Preventing this is usually done by successfully verification when accessing the item, most often unlocking the file, but it can be stranger mechanisms (Which are usually covered under the Quick Contests against the Analyze program, or at least can be discovered in that way).
+	
+	Regardless, traps are still one thing: indiscriminate. Any self-respecting spyder will tune the lethality and sensitivity of a data bomb to safeguard against casual intrusion, because bored employees will always go poking around things. This is firstly covered in simply choosing a payload beside the Damage program, such as Alter or Control, that won't cause as many issues in case of accident. It can also include a higher threshold for anomalous behaviour, represented in needing the Analyze program needing a higher Margin of Success or Victory to set off the Trigger program - or perhaps requiring follow-up scans.
+	
+	\begin{itemize}
+		\itemsep 0pt
+		\item Stealth :: Complexity 4 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Used to keep itself hidden on the file, program, or other location.
+		\end{itemize}
+		\item Analyze :: Complexity 3 + 1 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Watches the file, its ICE, or some other program in order to detect anomalous activity.
+		\end{itemize}
+		\item Trigger :: Complexity 3
+		\begin{itemize}
+			\itemsep 0pt
+			\item Will trigger the following programs upon detecting anomalous enough activity.
+		\end{itemize}
+		\item Search :: Complexity 3 + 1 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Used to trace back the activity to the anomalous connection point.
+		\end{itemize}
+		\item Breach :: Complexity 3 + 1 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Breaches the ICE of the decker, allowing for followup response
+		\end{itemize}
+		\item Damage :: Complexity 5 + Level
+		\begin{itemize}
+			\itemsep 0pt
+			\item Either frags the decker, or fries the computer. Can be switched out with any payload program as necessary.
+		\end{itemize}
+	\end{itemize}
 
 	
 	\subsection{Sample Hosts}
+	
+	Provided are some sample host writeups based on the official Shadowrun hosts found in Data Trails/Kill Code.
 	
 	\subsubsection{The Seattle Metroplex Administration Host}
 	
 	\hspace{\parindent}\textbf{Host Computer:} Mainframe, Complexity 7
 	
 	\textbf{Programs:}
-	1 Complexity 7, Dedicated to employee and public use. Provides tools, searching, payment, sign in, system controls, etc. If the player needs to access these (For instance, accessing the payment security that the host runs themselves), they are usually Complexity 5 programs.
 	
 	\begin{itemize}
 		\itemsep 0pt
-		\item 1 Complexity 6 ICE (+3), providing security for the host
-		\item 1 Complexity 6 Listen (+4), letting through employees and citizens with SINs
-		\item 1 Complexity 6 Analyze (+3), watches the ICE and Listen programs to detect any signs of hacking.
-		\item 1 Complexity 3 Trigger, alerts system admins if there is any sign of hacking via Analyze.
+		\item $\sim$10,000 Complexity 2 Programs providing tools, searching, payment, sign-in, system controls, etc. Some of these are Complexity 3-4 for better security or technological reasons, such as payment or system controls.
+		\item $\times$1 Complexity 6 ICE (+3), providing security for the host
+		\item $\times$1 Complexity 6 Listen (+4), letting through employees and citizens with SINs
+		\item $\times$1 Complexity 6 Analyze (+3), watches the ICE and Listen programs to detect any signs of hacking.
+		\item $\times$1 Complexity 3 Trigger, alerts system admins if there is any sign of hacking via Analyze.
 	\end{itemize}
 
 	\textbf{IC:}
 	
-	The host is meant to be used regularly by the public, so all IC should focus on detection and prevention. Dangerous IC are right out and even privacy breaching IC meant to track down offenders might cause legal issues and will be used with caution.
+	The host is meant to be used regularly by the public, so all IC should focus on detection and prevention. Dangerous IC are right out and even privacy breaching IC meant to track down offenders might cause legal issues (Largely relating to extraterritoriality and corporations) and will be used with caution.
 	
 	\begin{itemize}
 		\itemsep 0pt
-		\item 1 Level 3 Patrol IC with anti-tamper (x2 Complexity 6 and x1 Complexity 3)
+		\item 1 Level 3 Patrol IC with anti-tamper ($\times$2 Complexity 6 and $\times$1 Complexity 3)
 	\end{itemize}
 	
 	
 	\textit{Leftover Space:}
 	\begin{itemize}
 		\itemsep 0pt
-		\item 4 Complexity 6 Programs
-		\item 9 Complexity 5 Programs
-		\item 8 Complexity 3 Programs
+		\item $\times$1 Complexity 7 Program
+		\item $\times$3 Complexity 6 Programs
+		\item $\times$9 Complexity 5 Programs
+		\item $\times$9 Complexity 4 Programs
+		\item $\times$8 Complexity 3 Programs
 	\end{itemize}
 	
 	\textbf{Spyder:}
