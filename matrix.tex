@@ -1,16 +1,18 @@
-\section{Matrix}
+\begin{section_header}[green]
+	\textbf{\section{Matrix}}
+\end{section_header}
 
 \begin{multicols}{3}
 	
 	\subsection{Books}
 	
-	The Matrix rules make use of GURPS Pyramid \#3/21 Cyberpunk article Console Cowboys and Cyberspace. It is a selection of rules for running a semi-complex minigame of hacking, which serves purpose for the Matrix well.
+	The Matrix rules make use of \GURPS Pyramid \#3/21 Cyberpunk article Console Cowboys and Cyberspace. It is a selection of rules for running a semi-complex minigame of hacking, which serves purpose for the Matrix well.
 	
 	Cyberpunk works through three parts: it creates an additional hardware modifier for computers to create cyberdecks, it creates rules for interface modes while hacking, and most importantly it creates a large swath of programs that are used to accomplish specific tasks in cyberspace.
 	
-	Cyberpunk also has a ruleset for determining opposition using the GURPS Action BAD system. However, these rules systematically misrepresent Shadowrun's security design philosophy, in that when facing powerful organizations, you will more often be facing many layers of weak opponents and security, and when facing a less-powerful individual, you will often face one strong opponent. BAD simply assigns a difficulty based on how powerful the entire opponent is, which tends to overvalue organizations and undervalue individual deckers. As such, it is not used for the setting.
+	Cyberpunk also has a ruleset for determining opposition using the \GURPS Action BAD system. However, these rules systematically misrepresent Shadowrun's security design philosophy, in that when facing powerful organizations, you will more often be facing many layers of weak opponents and security, and when facing a less-powerful individual, you will often face one strong opponent. BAD simply assigns a difficulty based on how powerful the entire opponent is, which tends to overvalue organizations and undervalue individual deckers. As such, it is not used for the setting.
 	
-	Another useful book is GURPS High Tech - Electricity and Electronics. It provides in depth explanations for many hardware and software related topics. Notably, we will be making use of the Dedicated modifier, which prevents programs from being changed, but applies x0.5¥ and x0.2lbs. 
+	Another useful book is \GURPS High Tech - Electricity and Electronics. It provides in depth explanations for many hardware and software related topics. Notably, we will be making use of the Dedicated modifier, which prevents programs from being changed, but applies x0.5¥ and x0.2lbs. 
 	
 	\subsection{Shadowrun Specifics}
 	
@@ -218,13 +220,10 @@
 	
 	\subsubsection{Hosts}
 	
+	\paragraph{Host Rating Table}
+	
+	
 	Hosts are the colloquial term for networks on the Matrix. In Shadowrun lore, there is some discrepancy on whether they have any physical presence at all, or are entirely run on some mix of computing power stolen from the wider Matrix and/or mystic Matrix techno-magic from dead Technomancers. 
-	
-	For the purposes of this book, we will take the stance that there are still hardware components to hosts, but their software aspect is still grown and cultivated by Matrix providers to be run on said hardware, providing the Complexity boost from TL 8 to TL 9 (Both to provide greater reason for physical infiltration and to make it logically consistent). 
-	
-	If the GM takes issue with this, simply change any hardware running a host (Which is generally the server portions of Intranets and Extranets) into a purely software format - and also try not to think very hard how it works.
-	
-	Hosts in base Shadowrun are generally given ratings from 1-12, ranging from home LANs to AAA Zero Zone equivalents, which determine how difficult they are to hack. In GURPS, the skill of a network's ICE program is a modifier to the Spyder's (or whomever set up/maintains the host) skill, based on Complexity; as such, the rating of a host is dependant on the Spyder's base skill and the Complexity of the host.
 	
 	\begin{center}
 		\begin{tabularx}{0.47\textwidth}{|c|c|c|X|}
@@ -247,12 +246,25 @@
 			\hline
 		\end{tabularx}
 	\end{center}
+	
+	For the purposes of this book, we will take the stance that there are still hardware components to hosts, but their software aspect is still grown and cultivated by Matrix providers to be run on said hardware, providing the Complexity boost from TL 8 to TL 9 (Both to provide greater reason for physical infiltration and to make it logically consistent). 
+	
+	If the GM takes issue with this, simply change any hardware running a host (Which is generally the server portions of Intranets and Extranets) into a purely software format - and also try not to think very hard how it works.
+	
+	Hosts in base Shadowrun are generally given ratings from 1-12, ranging from home LANs to AAA Zero Zone equivalents, which determine how difficult they are to hack. In \GURPS, the skill of a network's ICE program is a modifier to the Spyder's (or whomever set up/maintains the host) skill, based on Complexity; as such, the rating of a host is dependant on the Spyder's base skill and the Complexity of the host.
 
-	Below is a table that provides a range of example Spyder Skills, Complexities, and total Effective Skill for Hosts, given by a Rating system similar to Shadowrun's original style.
+	The \textit{Host Rating Table} provides a range of example Spyder Skills, Complexities, and total Effective Skill for Hosts, given by a Rating system similar to Shadowrun's original style.
 		
 	Another important consideration when designing hosts is software. It can be tempting to see Complexity 7 Hosts as an opportunity to slap Complexity 7 ICE on them, but hosts have further purpose than to be literal brick walls!
 	
-	Hosts have limited program slots/processing power, which has to be used providing their services. If an admin takes their Complexity 7 Host and runs a Complexity 7 ICE and Listen on it at all times, there would be no program slots left for any non-trivial commercial use!
+
+	Hosts have limited program slots/processing power, which has to be used providing their services.
+	 
+	\begin{wrapfigure}[19]{l}{70pt}
+		
+	\end{wrapfigure}
+	
+	If an admin takes their Complexity 7 Host and runs a Complexity 7 ICE and Listen on it at all times, there would be no program slots left for any non-trivial commercial use!
 	
 	How much of a host's program slots are left to commercial use is a fine art that is best determine by the GM based upon the host's needs. A decent range is around 1/5 - 1/3 of the program slots reserved for commercial use. However, some considerations are: 
 	
@@ -266,10 +278,7 @@
 	There is one caveat to this advice: some companies will have dedicated servers that are set up to handle their firewall and security. 
 	
 	In such a case, \textit{all of the program slots} can be used for security purposes! However, these are often much less powerful than the host as a whole, so the effect is not that different.
-	
-	\begin{wrapfigure}[14]{l}{70pt}
-		
-	\end{wrapfigure}
+
 
 	The math surrounding programs slots can sometimes be tedious. An easier way to go about it is to remember that all programs take up 1/10 the complexity of the size above them. If you start out with the 2 slots allowed for a computer at base, you can multiply by 10, subtract out any used slots at that level (Which is Complexity-1), then multiply by 10 again and continue for each complexity down to 1. You can simply reverse this by dividing by 10 repeatedly, after which you have a decimal number for which each number left to right indicates your remaining slots for each complexity from highest to lowest. As a quick example, with a Complexity 6 Computer running 1 C6, 4 C5, 2 C4, 0 C3, and 1 C2, you perform the following steps: \[(((((2 - 1) \times 10 - 4) \times 10  - 2) \times 10 - 0) \times 10 - 1)\]
 	

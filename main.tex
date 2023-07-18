@@ -12,6 +12,9 @@
 \usepackage{wrapfig}
 \usepackage[T1]{fontenc}
 \usepackage{mdframed}
+\usepackage{titlesec}
+%\titleformat*{\section}{%
+%	\selectfont} 
 \usepackage{geometry}
 \geometry{
 	a4paper,
@@ -49,13 +52,25 @@
 	breakable,
 	blanker
 }
+\newtcolorbox{section_header}[1][]{%
+	enhanced jigsaw, 
+	enlarge top by=-2.5cm, 
+	top=2.1cm,
+	interior style={top color=#1, bottom color=white}
+}
 
 \newtcolorbox{coloredbox}{breakable}
 
-
 \pgfpagesuselayout{boxed}
 
-\title{GURPS Shadowrun}
+%\renewcommand{\thesubsubsection}{}
+%\renewcommand{\thesubsection}{}
+%\renewcommand{\thesection}{}
+\titleformat*{\section}{\Huge\centering}
+%\setcounter{secnumdepth}{-1}
+\newcommand{\GURPS}{\textbf{GURPS}\space}
+
+\title{\GURPS \textbf{Shadowrun}}
 \author{ingeanus}
 \date{July 2023 (Ver 2.0)}
 
