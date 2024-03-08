@@ -1373,7 +1373,7 @@ The GM should feel free to add some mental Perks and Quirks as pilot programs ad
 \textbf{Traits:}
 Complexity Limited IQ [0]
 
-\subsubsection{Autosofts}
+\subsubsection{Autosofts}\label{autosofts}
 
 Anyone can purchase an autosoft for a skill at a rate of 2,000¥ per CP. Common ones include Guns, Gunner, Observation, and Stealth. Autosofts have a complexity based on their CP, starting at Complexity 2 for 1 CP, and increasing by +1 Complexity per doubling of CP. Riggers may run Autosofts for drones in their network, as covered in the \hyperref[rigger_rules]{Rigging Section.}
 
@@ -2057,7 +2057,7 @@ The vehicle has DR 6 all sides. The battery lasts $\sim$6 hours and takes four t
 	
 	The latter requires specific tools and equipment alongside a Successful Engineer (Often complimented by Research and/or Mechanic) followed by a Machinist, both often at some small penalty. Duration varies, however the New Invention (B473) rules often serve well, even if only used as guidelines to avoid slowing down play. This allows for costs as low as 1/5 of the parts cost — assuming no failed attempts.
 			
-	\subsubsection{Weight and Speed}\ref{weight_and_speed}
+	\subsubsection{Weight and Speed}\label{weight_and_speed}
 	
 	When you're adding weight to vehicles, it can notably slow them down — especially when that weight is in the form of things like 200 lbs of armor! 
 	
@@ -2456,8 +2456,23 @@ The vehicle has DR 6 all sides. The battery lasts $\sim$6 hours and takes four t
 	\subsubsection{Gridlink Override}
 	
 	\subsubsection{Pilot Improvement}
+	Var¥ LC 2-4
+	
+	Pilot Improvements are relatively simple, just buy a \hyperref[autosofts]{Vehicle Operation Skill Autosoft} at a higher complexity than is currently on the ship. This may require improving the built in computer as well. This assumes that the Pilot Programs are only interested in being able to be competent drivers; it may be the case that the GM/riggers want vehicles to be as intelligent as drones are — able to navigate unfamiliar situations well, improvise, and take abstract orders. If that is the case, they should buy Pilot Programs according to the \hyperref[drones]{Pilot Program statblock in the Drones Section.}
 	
 	\subsubsection{Sensor Upgrades}
+	
+	Sensor Upgrades take one of two forms: Either improving already existing sensors or adding new sensors to the suite.
+	
+	Adding new sensors is simple enough: Find them as appropriate in Ultratech, buy and install them, and for particularly large ones account for \hyperref[weight_and_speed]{weight and speed effects.}
+	
+	There are some sensors which are not readily available in Ultratech that are listed below:
+	
+	\textit{Radar/Laser Detector}
+	
+	Upgrading Sensors is more difficult, as only certain kinds of sensors can be improved and only to certain degree. The easiest way is usually to go from a Smaller sensor to a larger one (e.g. change from a Medium Radar to a Large Radar). Other types of sensors can have certain upgrades applied to them (Such as Infravision on cameras), which are detailed below:
+	
+	Sensor Upgrades:
 	
 	\subsubsection{Signature Masking}
 	
@@ -2487,6 +2502,8 @@ The vehicle has DR 6 all sides. The battery lasts $\sim$6 hours and takes four t
 	The GM may allow for radical levels of solar cell coverage, taking up all available space that would get sunlight. In such a case, double the percentage and cost.
 
 	\textcolor{OliveGreen}{\textit{Example: Gandhi is adding Solar Cells to his Toyota Gopher in order to increase its range and reliability. This costs $4^2 \times 360 = 5,760$¥ and increases battery life by $\frac{4^2 \times 1.2}{56^2 \times 2.42} \times 4,000 = 10$\%, going from 6 hours to 6 hours 36 minutes. This increases range from 711/355 to 782/390. Recharging takes $\frac{1}{0.1/2} \times 6 = 120$ hours alone or $\frac{1}{0.5 + 0.1/2} \times 6 = 10.9$ hours on Gridlink.}}
+	
+	These rules are largely realistic, however the GM may wish for outputs similar to the Shadowrun Suncell, which can power vehicles by itself. The GM can certainly allow such things, however be aware that sunlight itself only shines around 7.7 kW onto a car, which have drivetrains requiring 60+ kW of power. So you would need to somehow get over 7.7$\times$ as much energy out of the sun as it puts in. I hope I don't need to explain why that's kind of stupid, but of course theme and setting are more important that thermodynamic regardless.
 	
 	
 	\subsubsection{Amenities}
